@@ -137,7 +137,7 @@ function Hackathons() {
                 ))}
               </div>
             </div>
-            <button className="register-btn modal-register">Register Now</button>
+            <button className="register-btn modal-register">Register with Us</button>
           </div>
         </div>
       )}

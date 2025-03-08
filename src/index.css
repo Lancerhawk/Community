@@ -1,0 +1,61 @@
+:root {
+  /* Light theme */
+  --primary-color: #8C83FF;
+  --secondary-color: #69DC6E;
+  --background-color: #1a1a1ad7;
+  --text-color: #ffffff;
+  --card-bg: #2d2d2d;
+  --nav-bg: #2d2d2d;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --hover-color: #7A72FF;
+  
+  --transition-speed: 0.3s;
+
+}
+
+[data-theme='dark'] {
+  --primary-color: #6C63FF;
+  --secondary-color: #4CAF50;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --nav-bg: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --hover-color: #5a52d5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  transition: all var(--transition-speed);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+}

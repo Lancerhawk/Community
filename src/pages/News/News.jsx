@@ -7,31 +7,32 @@ function News() {
   const [loading, setLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(10); 
 
-  const fetchNews = async (query = "technology") => {
-    setLoading(true);
-    try {
-      const response = await fetch(
-        `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&apiKey=d358e00b2ddf4d25aa3170ef5c17bdf5`
+ const fetchNews = async (query = "technology") => {
+  setLoading(true);
+  try {
+    const response = await fetch(
+      `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
+    );
+    const data = await response.json();
+    if (data.articles) {
+      setNews(
+        data.articles.map((article, index) => ({
+          id: index + 1,
+          title: article.title,
+          content: article.description || "No description available",
+          date: new Date(article.publishedAt).toISOString().split("T")[0],
+          category: "Technology",
+          link: article.url,
+        }))
       );
-      const data = await response.json();
-      if (data.articles) {
-        setNews(
-          data.articles.map((article, index) => ({
-            id: index + 1,
-            title: article.title,
-            content: article.description || "No description available",
-            date: new Date(article.publishedAt).toISOString().split("T")[0],
-            category: "Technology",
-            link: article.url,
-          }))
-        );
-      }
-    } catch (error) {
-      console.error("Error fetching news:", error);
-    } finally {
-      setLoading(false);
     }
-  };
+  } catch (error) {
+    console.error("Error fetching news:", error);
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   useEffect(() => {
     fetchNews();

@@ -13,6 +13,7 @@ function News() {
     const response = await fetch(
       `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
     );
+    console.log("API Key:", process.env.NEXT_PUBLIC_API_KEY);
     const data = await response.json();
     if (data.articles) {
       setNews(

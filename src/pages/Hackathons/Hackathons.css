@@ -40,9 +40,17 @@
 
 .hackathons-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 2rem;
   padding: 2rem 0;
+}
+
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  margin-top: 20px;
 }
 
 .hackathon-card {
@@ -251,6 +259,17 @@
 }
 }
 
+@media (max-width: 450px){
+    .timeline-event{
+      font-size: 12px;
+    } .timeline-time{
+      font-size: 12px;
+    }
+
+    .timeline-item{
+      overflow-y: scroll;
+    }
+  }
 
 .search-bar {
   width: 100%;

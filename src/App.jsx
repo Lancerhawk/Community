@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home'
 import Hackathons from './pages/Hackathons/Hackathons'
@@ -16,7 +16,8 @@ function App() {
     document.documentElement.setAttribute('data-theme', newTheme)
   }
 
-  return (<Router>
+  return (
+  <Router>
     
     <div className="app">
       <div className="squares-background">

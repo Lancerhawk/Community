@@ -23,7 +23,8 @@ function Navbar({ theme, toggleTheme }) {
       <nav className="navbar">
         <div className="navbar-container">
 
-        <img src={heading} alt="" className='logo'/>
+        <img src={heading} alt="" className='logo' 
+          draggable="false"/>
 
           <button
             className={`burger-menu ${isOpen ? 'open' : ''}`}

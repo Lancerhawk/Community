@@ -47,6 +47,7 @@ function Home() {
           src={Logo}
           alt="Coding Era Logo"
           className="hero-logo"
+          draggable="false"
         />
 
         <h1>Welcome to Coding Era!</h1>
@@ -57,7 +58,7 @@ function Home() {
           rel="noopener noreferrer"
           className="join-btn"
         >
-          Join Community
+          Join Our Community
         </a>
       </div>
 

@@ -1,42 +1,94 @@
-import { useState } from 'react'
-import './News.css'
+import { useState, useEffect } from "react";
+import "./News.css";
 
 function News() {
-  const [news] = useState([
-    {
-      id: 1,
-      title: "New AI Framework Released",
-      content: "A revolutionary AI framework has been released that promises to simplify machine learning development.",
-      date: "2024-03-15",
-      category: "Artificial Intelligence"
-    },
-    {
-      id: 2,
-      title: "Web Assembly's Rising Popularity",
-      content: "WebAssembly continues to gain traction among developers for high-performance web applications.",
-      date: "2024-03-14",
-      category: "Web Development"
+  const [searchTerm, setSearchTerm] = useState("");
+  const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [visibleCount, setVisibleCount] = useState(10); 
+
+  const fetchNews = async (query = "technology") => {
+    setLoading(true);
+    try {
+      const response = await fetch(
+        `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&apiKey=d358e00b2ddf4d25aa3170ef5c17bdf5`
+      );
+      const data = await response.json();
+      if (data.articles) {
+        setNews(
+          data.articles.map((article, index) => ({
+            id: index + 1,
+            title: article.title,
+            content: article.description || "No description available",
+            date: new Date(article.publishedAt).toISOString().split("T")[0],
+            category: "Technology",
+            link: article.url,
+          }))
+        );
+      }
+    } catch (error) {
+      console.error("Error fetching news:", error);
+    } finally {
+      setLoading(false);
     }
-  ])
+  };
+
+  useEffect(() => {
+    fetchNews();
+  }, []);
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+    if (e.target.value.length > 2) {
+      fetchNews(e.target.value);
+    } else {
+      fetchNews("technology"); 
+    }
+  };
 
   return (
     <div className="news">
       <h1 className="page-title">Tech News</h1>
-      <div className="news-grid">
-        {news.map(item => (
-          <div key={item.id} className="news-card">
-            <span className="category">{item.category}</span>
-            <h2>{item.title}</h2>
-            <p>{item.content}</p>
-            <div className="news-footer">
-              <span className="date">{item.date}</span>
-              <button className="read-more">Read More</button>
-            </div>
-          </div>
-        ))}
-      </div>
+
+      <input
+        type="text"
+        placeholder="🔍 Search News..."
+        className="search-bar"
+        value={searchTerm}
+        onChange={handleSearch}
+      />
+
+      {loading ? (
+        <p className="loading">Loading news...</p>
+      ) : (
+        <div className="news-grid">
+          {news.length > 0 ? (
+            news.slice(0, visibleCount).map((item) => (
+              <div key={item.id} className="news-card">
+                <span className="category">{item.category}</span>
+                <h2>{item.title}</h2>
+                <p>{item.content}</p>
+                <div className="news-footer">
+                  <span className="date">{item.date}</span>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <button className="read-more">Read More</button>
+                  </a>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className="no-results">No news articles match your search.</p>
+          )}
+        </div>
+      )}
+
+      {visibleCount < news.length && (
+        <button className="load-more" onClick={() => setVisibleCount(visibleCount + 10)}>
+          Load More
+        </button>
+      )}
     </div>
-  )
+  );
 }
 
-export default News
+export default News;

@@ -48,25 +48,9 @@ function Hackathons() {
       ],
       requirements: "Unique Idea on any of these domains: Web Development Track, Smart Cities and IoT Solutions, Mobile App Development Track, IoT-Enabled Healthcare and Assistive Technologies, Data Science & Machine Learning, Smart Wearables for Safety, Blockchain & Cryptography Track, Disaster Management and Emergency Response, Open Innovation Track, Agritech and Rural Innovation."
     },
+
     {
       id: 3,
-      title: "Code Nakshatra",
-      description: "Code Nakshatra is a 24-hour hackathon hosted by Code Rangers and Geek Room TIIPS, designed to foster innovation and collaboration among tech enthusiasts. Participants will engage in live project presentations, pitch their visions, and receive guidance from expert mentors and judges.",
-      startDate: "21-03-2025",
-      endDate: "22-03-2025",
-      venue: "TIIPS Campus, Greater Noida",
-      prize: "₹3,00,000+ (Cash prizes worth over ₹25,000)",
-      level: "Intermediate",
-      category: "open",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfi5KLzBMSVql_muIn3IDAn0chN5LeRhhENb2nxT9aoh24mZw/viewform?usp=dialog",
-      timeline: [
-        { "time": "21st March 2025", "event": "Hackathon Commencement" },
-        { "time": "22nd March 2025", "event": "Hackathon Conclusion and Award Ceremony" }
-      ],
-      requirements: "Participants are encouraged to bring innovative ideas across various domains. Teams can consist of 1-4 members, and projects should be developed during the hackathon period. Submissions must include a publicly visible GitHub repository link and a brief video demonstration of the hack."
-    },
-    {
-      id: 4,
       title: "HackByte 3.0",
       description: "HackByte 3.0 is a 36-hour in-person hackathon organized by IIITDM Jabalpur, aiming to break barriers and foster a culture of creativity, growth, and innovation. Participants are invited to push their limits and create bold solutions.",
       startDate: "04-04-2025",
@@ -82,42 +66,6 @@ function Hackathons() {
       ],
       requirements: "Teams can consist of 1-4 members. Projects should be developed during the hackathon period. Participants are expected to create innovative projects in accordance with the theme provided."
     },
-
-    {
-  id: 5,
-  title: "HaccVerse '25",
-  description: "HaccVerse '25 is a flagship 32-hour hackathon bringing together developers, designers, and innovators to solve real-world challenges through technology and creativity. The event fosters interdisciplinary collaboration, allowing participants to blend AI/ML, Web3, cybersecurity, IoT, and more to build groundbreaking solutions.",
-  startDate: "Date not specified",
-  endDate: "Date not specified",
-  venue: "Venue not specified",
-  prize: "Details not specified",
-  level: "Intermediate",
-  category: "open",
-  registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfi5KLzBMSVql_muIn3IDAn0chN5LeRhhENb2nxT9aoh24mZw/viewform?usp=dialog",
-  timeline: [
-    { time: "Not specified", event: "Hackathon Commencement" },
-    { time: "Not specified", event: "Hackathon Conclusion and Award Ceremony" }
-  ],
-  requirements: "Participants are encouraged to bring innovative ideas across various domains. Teams can consist of 1-4 members, and projects should be developed during the hackathon period."
-},
-{
-  id: 6,
-  title: "Hack Genesis '25",
-  description: "Hack Genesis '25 is the flagship hackathon of Christ University Delhi NCR Campus, uniting brilliant minds from around the globe for an intensive 24-hour marathon of ideation, development, and problem-solving.",
-  startDate: "24-03-2025",
-  endDate: "02-04-2025",
-  venue: "Christ University Delhi NCR Campus, Ghaziabad, India",
-  prize: "$100",
-  level: "Intermediate",
-  category: "open",
-  registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfi5KLzBMSVql_muIn3IDAn0chN5LeRhhENb2nxT9aoh24mZw/viewform?usp=dialog",
-  timeline: [
-    { time: "24th March 2025", event: "Hackathon Commencement" },
-    { time: "2nd April 2025", event: "Hackathon Conclusion and Award Ceremony" }
-  ],
-  requirements: "Teams can consist of 2-4 members. Projects should be developed during the hackathon period. Participants are expected to create innovative projects in accordance with the theme provided."
-}
-
   ])
 
   const filters = [

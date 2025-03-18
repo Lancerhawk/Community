@@ -6,7 +6,7 @@ function News() {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(10); 
-  const API_VARIABLE_KEY = process.env.VITE_PUBLIC_API_KEY;
+  const API_VARIABLE_KEY = import.meta.env.VITE_PUBLIC_API_KEY;
 
  const fetchNews = async (query = "technology") => {
   setLoading(true);

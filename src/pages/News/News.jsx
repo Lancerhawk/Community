@@ -6,14 +6,15 @@ function News() {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(10); 
+  const API_VARIABLE_KEY = process.env.VITE_PUBLIC_API_KEY;
 
  const fetchNews = async (query = "technology") => {
   setLoading(true);
   try {
     const response = await fetch(
-      `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&apiKey=${process.env.VITE_PUBLIC_API_KEY}`
+      `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&apiKey=${API_VARIABLE_KEY}`
     );
-    console.log("API Key:", process.env.VITE_PUBLIC_API_KEY);
+    console.log("API Key:", API_VARIABLE_KEY);
     const data = await response.json();
     if (data.articles) {
       setNews(
@@ -32,6 +33,7 @@ function News() {
   } finally {
     setLoading(false);
   }
+   console.log("API Key:", API_VARIABLE_KEY);
 };
 
 

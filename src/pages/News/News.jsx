@@ -14,8 +14,7 @@ function News() {
     const response = await fetch(
       `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&apiKey=${API_VARIABLE_KEY}`, {
         headers : {
-          "Connection" : "Upgrade",
-          "Upgrade" : "h2c",
+          "Connection" : "keep-alive",
         }
       }
     );

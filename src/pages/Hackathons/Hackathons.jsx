@@ -11,30 +11,36 @@ function Hackathons() {
     {
       id: 1,
       title: "Business Game Hackathon",
-      description: "The Business Strategy Hackathon is a premier event where teams analyze real-world business problems, create market-driven solutions, and present strategies to an expert panel. The competition is designed to test innovation, analytical thinking, and strategic execution. ",
+      description: "<p>The Business Strategy Hackathon is a premier event where teams analyze real-world business problems, create market-driven solutions, and present strategies to an expert panel. The competition is designed to test innovation, analytical thinking, and strategic execution.</p><h3>About Abhikalpan</h3><p>Abhikalpan is the annual technical fest of PDPM IIITDM Jabalpur, uniting innovators, problem-solvers, and creative minds. It offers a platform for students to showcase their technical and strategic expertise through competitions, workshops, and industry-led sessions.</p><h3>Judging Criteria</h3><ul><li><strong>Innovation (15%)</strong> – Originality and uniqueness of the idea</li><li><strong>Practicality (15%)</strong> – Feasibility and real-world application</li><li><strong>Dashboarding (15%)</strong> – Converts data into visuals and representable form</li><li><strong>Presentation Skills (15%)</strong> – Communication and clarity of ideas</li><li><strong>Analytics (20%)</strong> – Data-driven decision-making and insights</li><li><strong>Teamwork (10%)</strong> – Collaboration and problem-solving approach</li><li><strong>Q&A Handling (10%)</strong> – Ability to defend and refine ideas</li><li><strong>Bonus Points (10%)</strong> – Exceptional creativity or execution</li></ul><h3>Rules</h3><p>To participate in this event, participants must be present on campus and have accommodation. For this, visit Abhikalpan, register for Abhikalpan, and complete the required registration process. Visit the official website for more details: <strong>https://www.abhikalpan.live/</strong></p><h3>Competition Rounds</h3><ul><li><strong>Round 1 (Offline Business Case Study & Dashboarding)</strong>: Teams will develop solutions based on a provided problem statement.</li><li><strong>Round 2 (Final Strategy Pitching & Showcasing)</strong>:<ul><li><strong>Presentation Duration</strong>: 10 minutes per team + 5-minute Q&A (Tentative)</li><li>Only 20 teams that qualify in the first round will participate in this round.</li><li>Judges’ decisions will be final and binding.</li><li>Read the Rulebook for more details.</li></ul></li></ul><h3>Prize Pool</h3><p><strong>Total Prize Pool:</strong> ₹60,000</p>",
       startDate: "11-04-2025",
       endDate: "12-04-2025",
       venue: "IIITDM Campus, Jabalpur",
-      prize: "₹60,000",
+      prize: "₹10,000",
       level: "Basic",
       category: "business",
+      registrationStatus: "closed",
+      registrationDeadline: "20-03-2025",
+      teamSize: "2-5 members",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfi5KLzBMSVql_muIn3IDAn0chN5LeRhhENb2nxT9aoh24mZw/viewform?usp=dialog",
       timeline: [
         { time: "Round 1: 11Apr 6:00PM - 12Apr 12:00AM", event: "Business Case Study & Dashboarding" },
         { time: "Round 2: 12Apr 1:45AM - 12Apr 4:45AM", event: "Pitching & Showcasing" },
       ],
-      requirements: "Business Game is a tech free hackathon, But basic Knowledge of creating Presentation and designs is needed."
+      requirements: "<h3>Prerequisites</h3><ul><li>No technical coding skills required</li><li>Basic knowledge of presentation creation</li><li>Understanding of design principles</li></ul><h3>Important Notes</h3><ul><li>This is a tech-free hackathon</li><li>Focus on business strategy and innovation</li></ul>"
     },
     {
       id: 2,
       title: "HackSagan",
-      description: "HACKSAGON was first launched in 2020 as a collaborative initiative to bring together innovative minds from across the nation. The inaugural edition was successfully organized by ABV-IIITM IEEE Student Branch in partnership with six IIITs, namely IIIT Una, IIIT Ranchi, IIIT Lucknow, IIIT Nagpur, IIITDM Kurnool, and IIIT Bhagalpur which witnessed registration from 293 teams with 1200 students and 95 teams being qualified for the final round. The event features five sub-tracks, each within the Software Track and the Hardware + Software Track, to encourage interdisciplinary learning and innovation.",
+      description: "<h3>About HackSagan</h3><p>HACKSAGON was first launched in 2020 as a collaborative initiative to bring together innovative minds from across the nation.</p><h3>Inaugural Edition Highlights</h3><ul><li>Organized by ABV-IIITM IEEE Student Branch</li><li>Partnership with 6 IIITs: Una, Ranchi, Lucknow, Nagpur, Kurnool, and Bhagalpur</li><li>293 registered teams</li><li>1200+ participating students</li><li>95 teams qualified for finals</li></ul><h3>Event Structure</h3><p>The event features five sub-tracks in two main categories:</p><ul><li><strong>Software Track</strong> - Pure software development</li><li><strong>Hardware + Software Track</strong> - Combined hardware and software solutions</li></ul><p>This structure encourages interdisciplinary learning and innovation.</p>",
       startDate: "15-05-2025",
       endDate: "16-05-2025",
       venue: "IIITDM Campus, Gwalior",
       prize: "₹2,50,000",
       level: "Intermidiate",
       category: "open",
+      registrationStatus: "closed",
+      registrationDeadline: "14-05-2025",
+      teamSize: "2-4 members",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfi5KLzBMSVql_muIn3IDAn0chN5LeRhhENb2nxT9aoh24mZw/viewform?usp=dialog",
       timeline: [
         { time: "Phase 1.1 - 28th March", event: "Presentation Upload and Registrations" },
@@ -46,26 +52,10 @@ function Hackathons() {
         { time: "Phase 3.2 - May 15th", event: "36Hour Hackathon Sprint in campus of IIITM" },
         { time: "Phase 3.3 - May 16th", event: "Finale Results" },
       ],
-      requirements: "Unique Idea on any of these domains: Web Development Track, Smart Cities and IoT Solutions, Mobile App Development Track, IoT-Enabled Healthcare and Assistive Technologies, Data Science & Machine Learning, Smart Wearables for Safety, Blockchain & Cryptography Track, Disaster Management and Emergency Response, Open Innovation Track, Agritech and Rural Innovation."
+      requirements: "<h3>Project Domains</h3><ul><li>Web Development Track</li><li>Smart Cities and IoT Solutions</li><li>Mobile App Development Track</li><li>IoT-Enabled Healthcare and Assistive Technologies</li><li>Data Science & Machine Learning</li><li>Smart Wearables for Safety</li><li>Blockchain & Cryptography Track</li><li>Disaster Management and Emergency Response</li><li>Open Innovation Track</li><li>Agritech and Rural Innovation</li></ul><h3>Submission Requirements</h3><ul><li>Project must be unique and innovative</li><li>Solution should address real-world problems</li><li>Complete documentation is mandatory</li></ul>"
     },
+    
 
-    {
-      id: 3,
-      title: "HackByte 3.0",
-      description: "HackByte 3.0 is a 36-hour in-person hackathon organized by IIITDM Jabalpur, aiming to break barriers and foster a culture of creativity, growth, and innovation. Participants are invited to push their limits and create bold solutions.",
-      startDate: "04-04-2025",
-      endDate: "06-04-2025",
-      venue: "IIITDM Jabalpur Campus",
-      prize: "₹85,000",
-      level: "Intermediate",
-      category: "open",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfi5KLzBMSVql_muIn3IDAn0chN5LeRhhENb2nxT9aoh24mZw/viewform?usp=dialog",
-      timeline: [
-        { time: "4th April 2025", event: "Hackathon Commencement" },
-        { time: "6th April 2025", event: "Hackathon Conclusion and Award Ceremony" }
-      ],
-      requirements: "Teams can consist of 1-4 members. Projects should be developed during the hackathon period. Participants are expected to create innovative projects in accordance with the theme provided."
-    },
   ])
 
   const filters = [
@@ -124,26 +114,37 @@ function Hackathons() {
 
       <div className="hackathons-grid">
         {filteredHackathons.map(hackathon => (
-          <div key={hackathon.id} className="hackathon-card">
+          <div key={hackathon.id} className={`hackathon-card ${hackathon.registrationStatus === 'closed' ? 'closed' : ''}`}>
+            <div className={`registration-status ${hackathon.registrationStatus}`}>
+              {hackathon.registrationStatus === 'closed' ? '🔒 Registration Closed' : '🔓 Registration Open'}
+            </div>
             <h2>{hackathon.title}</h2>
             <p className="description">
-              {hackathon.description.length > 100
-                ? hackathon.description.substring(0, 100) + "..."
-                : hackathon.description}
+              <div dangerouslySetInnerHTML={{
+                __html: hackathon.description.replace(/<[^>]*>/g, '').substring(0, 100) + (hackathon.description.length > 100 ? '...' : '')
+              }} />
             </p>
 
             <div className="hackathon-details">
               <div className="detail-item">
-                <span className="detail-label">📅 Date</span>
+                <span className="detail-label">📅 Event Date</span>
                 <span className="detail-value">{hackathon.startDate} - {hackathon.endDate}</span>
               </div>
               <div className="detail-item">
-                <span className="detail-label">🏆 Prize</span>
+                <span className="detail-label">⏰ Registration Deadline</span>
+                <span className="detail-value">{hackathon.registrationDeadline}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">🏆 Prize Pool</span>
                 <span className="detail-value">{hackathon.prize}</span>
               </div>
               <div className="detail-item">
                 <span className="detail-label">📍 Venue</span>
                 <span className="detail-value">{hackathon.venue}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">👥 Team Size</span>
+                <span className="detail-value">{hackathon.teamSize}</span>
               </div>
               <div className="detail-item">
                 <span className="detail-label">🎯 Level</span>
@@ -154,10 +155,11 @@ function Hackathons() {
 
 
             <button
-                className="register-btn"
+                className={`register-btn ${hackathon.registrationStatus === 'closed' ? 'closed' : ''}`}
                 onClick={() => handleRegisterClick(hackathon.registrationLink)}
+                disabled={hackathon.registrationStatus === 'closed'}
               >
-                Register Now
+                {hackathon.registrationStatus === 'closed' ? '🔒 Registration Closed' : 'Register Now'}
               </button>
               <button className="details-btn" onClick={() => openModal(hackathon)}>View Details</button>
             </div>
@@ -172,12 +174,12 @@ function Hackathons() {
             <h2>{selectedHackathon.title}</h2>
             <div className="modal-section">
               <h3>Description</h3>
-              <p>{selectedHackathon.description}</p>
+              <div className="rich-text" dangerouslySetInnerHTML={{ __html: selectedHackathon.description }} />
             </div>
 
             <div className="modal-section">
               <h3>Requirements</h3>
-              <p>{selectedHackathon.requirements}</p>
+              <div className="rich-text" dangerouslySetInnerHTML={{ __html: selectedHackathon.requirements }} />
             </div>
             <div className="modal-section">
               <h3>Timeline</h3>
@@ -190,8 +192,13 @@ function Hackathons() {
                 ))}
               </div>
             </div> 
-            <a href={selectedHackathon.registrationLink} target="_blank" rel="noopener noreferrer">
-              <button className="register-btn modal-register">Register Now</button>
+            <a href={selectedHackathon.registrationStatus === 'closed' ? '#' : selectedHackathon.registrationLink} target="_blank" rel="noopener noreferrer">
+              <button 
+                className={`register-btn modal-register ${selectedHackathon.registrationStatus === 'closed' ? 'closed' : ''}`}
+                disabled={selectedHackathon.registrationStatus === 'closed'}
+              >
+                {selectedHackathon.registrationStatus === 'closed' ? '🔒 Registration Closed' : 'Register Now'}
+              </button>
             </a>
           </div>
         </div>

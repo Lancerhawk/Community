@@ -46,6 +46,17 @@ function Navbar({ theme, toggleTheme }) {
                   Home
                 </NavLink>
               </li>
+
+              <li>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => (isActive ? 'active' : '')}
+                  end
+                  onClick={closeSidebar} 
+                >
+                  About
+                </NavLink>
+              </li>
               <li>
                 <NavLink
                   to="/hackathons"

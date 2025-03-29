@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home'
@@ -19,13 +19,13 @@ function ScrollToTop() {
 }
 
 function App() {
-  const [theme, setTheme] = useState('light')
+  // const [theme, setTheme] = useState('light')
 
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light'
-    setTheme(newTheme)
-    document.documentElement.setAttribute('data-theme', newTheme)
-  }
+  // const toggleTheme = () => {
+  //   const newTheme = theme === 'light' ? 'dark' : 'light'
+  //   setTheme(newTheme)
+  //   document.documentElement.setAttribute('data-theme', newTheme)
+  // }
 
   return (
     <Router>
@@ -34,7 +34,7 @@ function App() {
         <CodeBackground />
         <div className="squares-background">
         </div>
-        <Navbar theme={theme} toggleTheme={toggleTheme} />
+        <Navbar />
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />

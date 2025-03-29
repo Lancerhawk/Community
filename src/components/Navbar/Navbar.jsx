@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 // import Logo from '../../assets/logo.jpg';
-import { FaSun, FaMoon } from 'react-icons/fa'
+// import { FaSun, FaMoon } from 'react-icons/fa'
 import heading from '../../assets/heading.png';
 
-function Navbar({ theme, toggleTheme }) {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -76,9 +76,9 @@ function Navbar({ theme, toggleTheme }) {
                 </NavLink>
               </li>
             </ul>
-            <button className="theme-toggle" onClick={toggleTheme}>
+            {/* <button className="theme-toggle" onClick={toggleTheme}>
             {theme === 'light' ? <FaMoon /> : <FaSun />}
-          </button>
+          </button> */}
 
           </div>
         </div>

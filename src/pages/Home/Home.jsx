@@ -138,8 +138,7 @@ function Home() {
         />
 
         <h1>Welcome to Coding Era!</h1>
-        <p>Your gateway to exciting hackathons and Learning with Us!</p>
-        <p>Grow Together!</p>
+        <p>Your gateway to exciting hackathons and Learn with Us!</p>
         <a
           href="https://chat.whatsapp.com/HXlBHOhjgnfGiZUOS2erAO"
           target="_blank"

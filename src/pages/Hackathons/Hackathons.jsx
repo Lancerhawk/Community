@@ -19,7 +19,7 @@ function Hackathons() {
       level: "Basic",
       category: "business",
       registrationStatus: "closed",
-      registrationDeadline: "20-03-2025",
+      registrationDeadline: "19-03-2025",
       teamSize: "2-5 members",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfi5KLzBMSVql_muIn3IDAn0chN5LeRhhENb2nxT9aoh24mZw/viewform?usp=dialog",
       timeline: [
@@ -39,7 +39,7 @@ function Hackathons() {
       level: "Intermidiate",
       category: "open",
       registrationStatus: "closed",
-      registrationDeadline: "14-05-2025",
+      registrationDeadline: "22-03-2025",
       teamSize: "2-4 members",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfi5KLzBMSVql_muIn3IDAn0chN5LeRhhENb2nxT9aoh24mZw/viewform?usp=dialog",
       timeline: [
@@ -54,8 +54,81 @@ function Hackathons() {
       ],
       requirements: "<h3>Project Domains</h3><ul><li>Web Development Track</li><li>Smart Cities and IoT Solutions</li><li>Mobile App Development Track</li><li>IoT-Enabled Healthcare and Assistive Technologies</li><li>Data Science & Machine Learning</li><li>Smart Wearables for Safety</li><li>Blockchain & Cryptography Track</li><li>Disaster Management and Emergency Response</li><li>Open Innovation Track</li><li>Agritech and Rural Innovation</li></ul><h3>Submission Requirements</h3><ul><li>Project must be unique and innovative</li><li>Solution should address real-world problems</li><li>Complete documentation is mandatory</li></ul>"
     },
-    
 
+    {
+      "id": 3,
+      "title": "Web Dash",
+      "description": "<p>Web Dash is an exciting web development challenge organized by the IEEE Computer Society JMI and IEEE JMI. Participants will be given three themes to choose from, and within 48 hours, they must develop a full-stack website based on their selected theme. The project must be fully functional and deployed by the end of the hackathon, making it a fast-paced and challenging event designed to push participants’ web development skills to the limit.</p><h3>Eligibility</h3><ul><li>Open to all undergraduate students.</li><li>Solo participation or teams of a maximum of 3 members.</li><li>Inter-college teams are allowed.</li><li>Inter-specialization teams are allowed.</li></ul><h3>Competition Format</h3><ul><li><strong>Round 1: Website Development Challenge (48 Hours)</strong><ul><li>Themes will be revealed 1 hour before the competition starts.</li><li>Participants must select one theme and build a fully deployed website within 48 hours.</li><li>The website should align with the provided theme.</li></ul></li><li><strong>Round 2: Finale at Jamia Millia Islamia</strong><ul><li>The top 8 teams will be invited to Jamia Millia Islamia on 26th April (tentative) for the final presentation round.</li></ul></li></ul><h3>Submission Requirements</h3><ul><li>A deployed website link (must be publicly accessible).</li><li>A GitHub repository link containing the project code along with a README file explaining the project.</li><li>A short video demonstration (maximum 3 minutes) explaining the website’s functionality (Mandatory).</li></ul><h3>Themes & Problem Statements</h3><p>Themes will be revealed 1 hour before the competition begins.</p><h3>Rules & Regulations</h3><ul><li>Participants must choose one theme and develop a website within 48 hours.</li><li>No extra time will be given beyond the 48-hour window.</li><li>Websites must be fully deployed and accessible via a live link.</li><li>No restrictions on technology—participants can use any tech stack.</li></ul><h3>Judging Criteria</h3><ul><li><strong>Functionality (30%)</strong> – The website must be fully functional with minimal bugs.</li><li><strong>Design & UI/UX (20%)</strong> – Aesthetic appeal and user experience matter.</li><li><strong>Innovation & Creativity (20%)</strong> – Unique and creative implementations will be rewarded.</li><li><strong>Problem-Solving & Real-World Applicability (20%)</strong> – How well the solution addresses a real problem within the chosen theme.</li><li><strong>Deployment & Presentation (10%)</strong> – The website must be accessible, properly deployed, and explained clearly in the video.</li></ul><h3>Competition Duration</h3><p><strong>Total Duration:</strong> 48 hours</p>",
+      "startDate": "28-03-2025",
+      "endDate": "26-04-2025",
+      "venue": "Jamia Millia Islamia, Delhi",
+      "prize": "₹--,---",
+      "level": "Intermediate",
+      "category": "webdev",
+      "registrationStatus": "open",
+      "registrationDeadline": "06-04-2025",
+      "teamSize": "1-3 members",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSdE4nyXne9IobsHX0w1WgSh7uRpbe0CsnAOaUj6SjrqMB32dQ/viewform",
+      "timeline": [
+        { "time": "28 Mar 25, 12:00 PM IST", "event": "Registration Begins" },
+        { "time": "17 Apr 25, 12:00 AM IST", "event": "Registration Deadline" },
+        { "time": "18 Apr 25, 12:00 PM IST", "event": "Hackathon Begins" },
+        { "time": "20 Apr 25, 12:00 PM IST", "event": "Hackathon Ends" },
+        { "time": "26 Apr 25, 09:00 AM IST", "event": "Finale" }
+      ],
+      "requirements": "None"
+    },
+    {
+      "id": 4,
+      "title": "Splunk Build-a-thon!",
+      "description": "<p><strong>Track 1: Splunk App Development</strong></p><p>Build innovative apps that extend Splunk’s capabilities. This track focuses on creating impactful solutions that seamlessly integrate with Splunk’s ecosystem to solve real-world challenges.</p><h3>Sample Problem Statements</h3><ul><li>Develop an app that enhances workflows, providing faster response and resolution using real-time Splunk data.</li><li>Create a customized dashboarding tool to deliver actionable insights for specific industries like healthcare, retail, and finance.</li><li>Build an app that automates reporting and compliance tracking.</li><li>Design an app to encourage data quality improvements within enterprise environments.</li></ul><p><strong>Track 2: Splunk Add-on Integration Development</strong></p><p>Create powerful Splunk Add-ons that integrate external data sources, services, and platforms with Splunk. This track focuses on seamless data ingestion, enrichment, and interoperability between Splunk and third-party tools.</p><h3>Sample Problem Statements</h3><ul><li><strong>IT Service Management Integration:</strong> Build an integration that enables Splunk customers to collect authentication events from a SaaS identity management product using its REST API.</li><li><strong>Optimized Resource Allocation for DevOps:</strong> Create an integration that sends Splunk search events to an IT service management ticketing system using a webhook-based API.</li><li><strong>Threat Intelligence Integration:</strong> Develop a Splunk Technical Add-on that pulls real-time threat intelligence feeds (IP addresses, domains, vulnerabilities) from a REST-based or streaming API into Splunk, ensuring scheduling, error handling, and data filtering.</li></ul><p><strong>Track 3: Data Management (SPL2 Pipelines)</strong></p><p>Utilize SPL2 (Search Processing Language) to design efficient and scalable pipelines for data ingestion, transformation, and analysis. This track encourages optimizing data workflows and extracting meaningful insights.</p><h3>Sample Problem Statements</h3><ul><li><strong>Reduce Log Volume:</strong> Develop SPL2 pipelines to manage large volumes of network logs efficiently, reducing storage costs, processing time, and noise while maintaining compliance.</li><li><strong>Convert Logs to Metrics:</strong> Implement logs-to-metrics (L2M) pipelines in SPL2 to enhance observability, reduce storage costs, and enable real-time alerting.</li></ul><p><strong>Track 4: AI/ML</strong></p><p>Develop ML-based threat detections inside Splunk using MLTK. This track focuses on building real-time pipelines to identify threat actors within Splunk's ecosystem.</p><h3>Sample Problem Statements</h3><ul><li>Detect <strong>Unusual Volume of Bytes Written to USB</strong> per device model.</li><li>Identify <strong>Unusual Volume of Box Downloads</strong> per user.</li><li>Spot <strong>VPN Logins from Unusual Locations</strong> per user model.</li><li>Monitor <strong>Unusual Time of Print Commands</strong> per user model.</li><li>Analyze <strong>Unusual Volume of Pages Printed</strong> per device model.</li></ul>",
+      "startDate": "28-04-2025",
+      "endDate": "23-06-2025",
+      "venue": "Online",
+      "prize": "$400",
+      "level": "Intermediate",
+      "category": "track",
+      "registrationStatus": "open",
+      "registrationDeadline": "06-04-2025",
+      "teamSize": "1-2 members",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSe_m-g1MmyA_X9agH01_2t371zBB07JkxxARz2tBG3xULNvrQ/viewform",
+      "timeline": [
+        { "time": "28 Apr 25, 09:30 PM IST", "event": "Idea Phase Begins" },
+        { "time": "26 May 25, 05:30 AM IST", "event": "Idea Phase Ends" },
+        { "time": "26 May 25, 09:30 PM IST", "event": "Prototype Phase Begins" },
+        { "time": "23 Jun 25, 05:30 AM IST", "event": "Prototype Phase Ends" }
+      ],
+
+      "requirements": "Open to all students, including those from non-technical backgrounds."
+    },
+
+
+    {
+      "id": 5,
+      "title": "Ease the Error 5.0",
+      "description": "<p><strong>Ease The Error 5.0</strong> is a 24-Hours Intercollegiate Hackathon conducted in Sri Venkateswara College of Engineering (SVCE), Sriperumbudur.</p><h3>Guidelines</h3><ul><li><strong>Team size:</strong> 4 - 6 members</li><li>Inter-college team members are not allowed (Members of the same college only)</li><li>Inter-specialization team members allowed</li><li>Problem Statements in over 5 Domains (Check our website)</li><li>2 reviews + Final judging</li><li>Software Hackathon</li><li>Registration only through our official website is taken under consideration</li><li>https://ease-the-error-sage.vercel.app</li></ul><h3>Round 1: Abstract Selection</h3><ul><li>Choose a problem statement and create an Abstract</li><li>The abstract template is provided on our website</li></ul><h3>Round 2: 24-Hour Hackathon</h3><ul><li>35 teams are shortlisted</li></ul><h3>Rules</h3><ul><li>Any software development tools, game engine, IDE, and/or programming language can be used for the event. If a team member uses a purchased tool licensed to them and the license is not transferable to other members, the team must choose one available to all developers.</li><li>Lightweight APIs like Google Maps, weather API, and addressing APIs are allowed. Heavyweight APIs are not allowed. In case of exceptions, judges will take the final call.</li><li>A team may not code applications that violate the code of conduct. For example, racially insensitive ideas for an application will automatically be disqualified.</li><li>All project submissions will be randomly code-reviewed. Applications will be spot-checked by code reviewers. All projects selected by the judges as finalists will be code-reviewed to confirm that the code is original work created at the hackathon and that all components and assets conform to the licenses allowed in these rules.</li></ul>",
+      "startDate": "18-03-2025",
+      "endDate": "11-04-2025",
+      "venue": "Online",
+      "prize": "₹50,000",
+      "level": "Intermediate",
+      "category": ["track", "open"],
+      "registrationStatus": "open",
+      "registrationDeadline": "05-04-2025",
+      "teamSize": "4-6 members",
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfScUfRx7W7K1W018OcqFowQyEtYs09A7rzPOrQJ1Q5IhEfyQ/viewform?usp=header",
+      "timeline": [
+        { "time": "24 Mar 25, 06:00 PM IST", "event": "Problem Statements & Registration Open" },
+        { "time": "11 Apr 25, 12:00 AM IST", "event": "Submission Deadline" },
+        { "time": "13 Apr 25, 11:00 PM IST", "event": "Shortlist & Waitlist Announcement" },
+        { "time": "18 Apr 25, 10:00 AM IST", "event": "Hackathon Kickoff" },
+        { "time": "18 Apr 25, 04:00 PM IST", "event": "First Round Judging" },
+        { "time": "18 Apr 25, 10:00 PM IST", "event": "Second Round Judging" },
+        { "time": "19 Apr 25, 09:00 AM IST", "event": "Final Round Judging" },
+        { "time": "19 Apr 25, 01:30 PM IST", "event": "Valedictory & Prize Distribution" }
+      ],
+      "requirements": "<h3>Project Domains</h3><ul><li>AI/ML Learning</li><li>Web3 and BlockChain</li><li>Data Analytics & Visualization</li><li>Cybersecurity & Privacy</li><li>Open Innovation Track</li>"
+    },
   ])
 
   const filters = [
@@ -65,12 +138,15 @@ function Hackathons() {
     { id: 'blockchain', label: '⛓️ Blockchain', color: '#FFA726' },
     { id: 'business', label: '💼 Business', color: '#2196F3' },
     { id: 'open', label: '🎯 Open Innovation', color: '#9C27B0' },
-  ]
+    { id: 'track', label: '🏁 Tracks', color: '#FF4081' },
+  ];
+
   const filteredHackathons = hackathons.filter(hackathon => {
-    const matchesFilter = activeFilter === 'all' || hackathon.category === activeFilter;
+    const matchesFilter = activeFilter === 'all' || hackathon.category.includes(activeFilter);
     const matchesSearch = hackathon.title.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesFilter && matchesSearch;
   });
+  
   const openModal = (hackathon) => {
     setSelectedHackathon(hackathon)
     setIsModalOpen(true)
@@ -154,7 +230,7 @@ function Hackathons() {
             <div className="card-actions">
 
 
-            <button
+              <button
                 className={`register-btn ${hackathon.registrationStatus === 'closed' ? 'closed' : ''}`}
                 onClick={() => handleRegisterClick(hackathon.registrationLink)}
                 disabled={hackathon.registrationStatus === 'closed'}
@@ -191,9 +267,9 @@ function Hackathons() {
                   </div>
                 ))}
               </div>
-            </div> 
+            </div>
             <a href={selectedHackathon.registrationStatus === 'closed' ? '#' : selectedHackathon.registrationLink} target="_blank" rel="noopener noreferrer">
-              <button 
+              <button
                 className={`register-btn modal-register ${selectedHackathon.registrationStatus === 'closed' ? 'closed' : ''}`}
                 disabled={selectedHackathon.registrationStatus === 'closed'}
               >

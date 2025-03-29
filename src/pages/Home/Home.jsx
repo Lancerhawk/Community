@@ -6,6 +6,12 @@ import photo2 from '../../assets/photo2.jpg';
 import { FaCode, FaUsers, FaLaptopCode, FaTrophy, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import kartik from '../../assets/photo3.png';
 import ayushman from '../../assets/photo4.png';
+import jaya from '../../assets/photo5.jpg';
+import kapil from '../../assets/photo6.jpg';
+import khwaja from '../../assets/photo7.png';
+import deepanshi from '../../assets/photo8.jpg';
+import shanti from '../../assets/photo9.png';
+import suneha from '../../assets/photo10.png';
 
 function Home() {
   const [stats, setStats] = useState({
@@ -64,7 +70,7 @@ function Home() {
       title: "Clubs",
       description: "Join or Create vibrant clubs and communities to network, collaborate, and grow with like-minded individuals."
     }
-    
+
   ];
 
   const testimonials = [
@@ -117,7 +123,7 @@ function Home() {
         github: "https://github.com",
         linkedin: "https://www.linkedin.com/in/arpit-s-5207a4253/",
       },
-      
+
     },
   ]);
 
@@ -138,7 +144,7 @@ function Home() {
         />
 
         <h1>Welcome to Coding Era!</h1>
-        <p>Your gateway to exciting hackathons and Learn with Us!</p>
+        <p>Your gateway to exciting hackathons and tech news</p>
         <a
           href="https://chat.whatsapp.com/HXlBHOhjgnfGiZUOS2erAO"
           target="_blank"
@@ -208,19 +214,19 @@ function Home() {
       </section>
 
       <section className="testimonials-section">
-  <h2 className="section-title">What Our Members Say</h2>
-  <div className="testimonials-grid">
-    {testimonials.map((testimonial, index) => (
-      <div key={index} className="testimonial-card" style={{ animationDelay: `${index * 0.2}s` }}>
-        <p className="testimonial-text">&ldquo;{testimonial.text}&rdquo;</p>
-        <div className="testimonial-author">
-          <strong>{testimonial.author}</strong>
-          <span>{testimonial.role}</span>
+        <h2 className="section-title">What Our Members Say</h2>
+        <div className="testimonials-grid">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="testimonial-card" style={{ animationDelay: `${index * 0.2}s` }}>
+              <p className="testimonial-text">&ldquo;{testimonial.text}&rdquo;</p>
+              <div className="testimonial-author">
+                <strong>{testimonial.author}</strong>
+                <span>{testimonial.role}</span>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-    ))}
-  </div>
-</section>
+      </section>
 
 
       <section className="community-section">
@@ -233,7 +239,7 @@ function Home() {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="member-avatar">
-                <img src={member.avatar} alt={member.name} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                <img src={member.avatar} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <h3>{member.name}</h3>
               <p className="member-role">{member.role}</p>
@@ -277,7 +283,7 @@ function Home() {
 
       <section className="team-section">
         <h2 className="section-title">Our Team Members</h2>
-        
+
         <div className="team-category">Secretaries</div>
         <div className="members-grid">
           {[
@@ -295,12 +301,12 @@ function Home() {
               role: "Administrative Secretary",
               skills: ["Event Planning", "Communication", "Resource Management"],
               linkedin: "https://www.linkedin.com/in/jaya-karwani-3088b1314/",
-              avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael"
+              avatar: jaya,
             }
           ].map((member, index) => (
             <div key={member.id} className="member-card" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="member-avatar">
-                <img src={member.avatar} alt={member.name} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                <img src={member.avatar} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <h3>{member.name}</h3>
               <p className="member-role">{member.role}</p>
@@ -325,7 +331,7 @@ function Home() {
               role: "Technical Master",
               skills: ["Team Management", "UI/UX Design", "Data Handling"],
               linkedin: "https://linkedin.com",
-              avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex"
+              avatar: khwaja,
             },
             {
               id: 6,
@@ -341,7 +347,7 @@ function Home() {
               role: "Web Master 2",
               skills: ["Web Development", "Data Handling", "Java"],
               linkedin: "https://linkedin.com",
-              avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=David"
+              avatar: deepanshi,
             },
             {
               id: 8,
@@ -354,7 +360,7 @@ function Home() {
           ].map((member, index) => (
             <div key={member.id} className="member-card" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="member-avatar">
-                <img src={member.avatar} alt={member.name} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                <img src={member.avatar} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <h3>{member.name}</h3>
               <p className="member-role">{member.role}</p>
@@ -387,12 +393,50 @@ function Home() {
               role: "Content Writer, Events Head",
               skills: ["Event Management", "Partnership Management", "AI Developer"],
               linkedin: "https://linkedin.com",
-              avatar: ayushman
+              avatar: ayushman,
             }
           ].map((member, index) => (
             <div key={member.id} className="member-card" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="member-avatar">
-                <img src={member.avatar} alt={member.name} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                <img src={member.avatar} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </div>
+              <h3>{member.name}</h3>
+              <p className="member-role">{member.role}</p>
+              <div className="member-specialties">
+                {member.skills.map((skill, i) => (
+                  <span key={i} className="specialty">{skill}</span>
+                ))}
+              </div>
+              <div className="social-links">
+                <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="social-link">LinkedIn</a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="team-category">Design Team</div>
+        <div className="members-grid">
+          {[
+            {
+              id: 11,
+              name: "Kapil Lakhera",
+              role: "Designer Lead",
+              skills: ["Frontend Dev", "UI/UX Designer", "Figma"],
+              linkedin: "https://linkedin.com",
+              avatar: kapil,
+            },
+            {
+              id: 12,
+              name: "Shanti Mishra",
+              role: "Designer",
+              skills: ["Canva Designer", "UI/UX"],
+              linkedin: "https://linkedin.com",
+              avatar: shanti,
+            }
+          ].map((member, index) => (
+            <div key={member.id} className="member-card" style={{ animationDelay: `${index * 0.2}s` }}>
+              <div className="member-avatar">
+                <img src={member.avatar} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <h3>{member.name}</h3>
               <p className="member-role">{member.role}</p>
@@ -412,15 +456,15 @@ function Home() {
         <div className="members-grid">
           {[
             {
-              id: 11,
+              id: 13,
               name: "Suneha Shrivastava",
               role: "Event Coordinator",
               skills: ["Entrepreneur", "Event Organizer", "Sponsorship Management"],
               linkedin: "https://linkedin.com",
-              avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Tom"
+              avatar: suneha,
             },
             {
-              id: 12,
+              id: 14,
               name: "Mradul Deodhiya",
               role: "Event Coordinator",
               skills: ["TroubleShooting", "Event Organizer", "Event Handling"],
@@ -430,7 +474,7 @@ function Home() {
           ].map((member, index) => (
             <div key={member.id} className="member-card" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="member-avatar">
-                <img src={member.avatar} alt={member.name} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                <img src={member.avatar} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <h3>{member.name}</h3>
               <p className="member-role">{member.role}</p>

@@ -68,6 +68,24 @@ function Navbar() {
               </li>
               <li>
                 <NavLink
+                  to="/clubs"
+                  className={({ isActive }) => (isActive ? 'active' : '')}
+                  onClick={closeSidebar} 
+                >
+                  Clubs
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/startups"
+                  className={({ isActive }) => (isActive ? 'active' : '')}
+                  onClick={closeSidebar}
+                >
+                  Startups
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/news"
                   className={({ isActive }) => (isActive ? 'active' : '')}
                   onClick={closeSidebar} 

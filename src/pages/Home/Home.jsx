@@ -335,7 +335,7 @@ function Home() {
             },
             {
               id: 6,
-              name: "Vikshit Sharma",
+              name: "Viksit Sharma",
               role: "Web Master",
               skills: ["Web Development", "DB Designer", "UI/UX Design"],
               linkedin: "https://linkedin.com",

@@ -19,14 +19,22 @@
   will-change: transform;
 }
 
-/* Hide default cursor */
-* {
-  cursor: none !important;
+@media (max-width: 768px) {
+  .custom-cursor, .cursor-trail {
+    display: none;
+  }
 }
 
-/* Show default cursor for interactive elements */
-a, button, input, textarea, select, [role="button"] {
-  cursor: none !important;
+/* Hide default cursor */
+@media (min-width: 769px) {
+  * {
+    cursor: none !important;
+  }
+
+  /* Show default cursor for interactive elements */
+  a, button, input, textarea, select, [role="button"] {
+    cursor: none !important;
+  }
 }
 
 /* Custom cursor states */

@@ -364,6 +364,12 @@
   border: 1px solid var(--text-color);
 }
 
+@media (max-width: 768px) {
+  .modal-close {
+    display:none;
+  }
+}
+
 .download-btn {
   background: var(--primary-color);
   color: white;

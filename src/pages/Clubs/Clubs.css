@@ -180,6 +180,12 @@
   transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .modal-close {
+    display:none;
+  }
+}
+
 .modal-close:hover {
   background: rgba(var(--primary-rgb), 0.1);
   color: var(--primary-color);

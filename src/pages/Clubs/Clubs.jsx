@@ -111,11 +111,11 @@ function Clubs() {
     let fileName;
 
     if (showRegisterModal) {
-      formUrl = '/src/assets/registerclub.pdf';
+      formUrl = '/registerclub.pdf';
       fileName = 'club_registration_form.pdf';
     } else if (showJoinModal && selectedClub) {
       if (selectedClub.name === 'Web Development Club') {
-        formUrl = '/src/assets/Web Development Club Approval Form.pdf';
+        formUrl = '/Web Development Club Approval Form.pdf';
         fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
       } else {
         alert('Form not available yet for this club. Please check back later.');

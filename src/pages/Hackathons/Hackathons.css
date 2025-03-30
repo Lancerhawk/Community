@@ -372,7 +372,10 @@
 
 @media (max-width: 768px) {
   .modal-close {
-    display:none;
+    font-size: 1.5rem;
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.4rem;
   }
 }
 

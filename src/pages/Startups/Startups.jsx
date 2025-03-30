@@ -56,7 +56,7 @@ function Startups() {
   };
 
   const downloadApplicationForm = () => {
-    const formUrl = '/src/assets/registerstartup.pdf';
+    const formUrl = '/registerstartup.pdf';
     const fileName = 'startup_registration_form.pdf';
     const link = document.createElement('a');
     link.href = formUrl;

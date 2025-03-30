@@ -9,7 +9,6 @@ const CodeBackground = () => {
     const ctx = canvas.getContext('2d');
     let animationFrameId;
 
-    // Set canvas size
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -17,13 +16,11 @@ const CodeBackground = () => {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Matrix rain characters
     const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノ';
     const fontSize = 14;
     const columns = Math.floor(canvas.width / fontSize);
     const drops = Array(columns).fill(1);
 
-    // Animation settings
     const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
     const secondaryColor = getComputedStyle(document.documentElement).getPropertyValue('--secondary-color').trim();
 
@@ -38,7 +35,6 @@ const CodeBackground = () => {
         const x = i * fontSize;
         const y = drops[i] * fontSize;
 
-        // Create gradient effect for each character
         const gradient = ctx.createLinearGradient(x, y - fontSize, x, y);
         gradient.addColorStop(0, primaryColor);
         gradient.addColorStop(1, secondaryColor);

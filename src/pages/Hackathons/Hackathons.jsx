@@ -132,6 +132,34 @@ function Hackathons() {
       ],
       "requirements": "<h3>Project Domains</h3><ul><li>AI/ML Learning</li><li>Web3 and BlockChain</li><li>Data Analytics & Visualization</li><li>Cybersecurity & Privacy</li><li>Open Innovation Track</li>"
     },
+    {
+      "id": 6,
+      "status": 'coming_soon',
+      "title": "HACKHAZARDS '25",
+      "description": "<p><strong>HACKHAZARDS '25</strong> is one of India's largest and premier community-run hackathons, making a comeback with more surprises than ever.</p><h3>Why Join HACKHAZARDS?</h3><ul><li><strong>Biggest Prize Pool:</strong> $10,000+ in cash, $250,000+ in credits & vouchers</li><li><strong>Exclusive Tracks:</strong> Monad, Base, Fluvio, Groq & RB Labs – making their India debut at HACKHAZARDS ‘25!</li><li><strong>Beginner-Friendly:</strong> Free workshops & bootcamps for all participants</li><li><strong>No Shortlisting:</strong> Everyone gets to hack!</li><li><strong>210 Hours of Hacking:</strong> Build something amazing</li><li><strong>Global Participation:</strong> Join from anywhere in the world</li><li><strong>Expert Guidance:</strong> 50+ global mentors & judges from top companies</li><li><strong>Exciting Rewards:</strong> Swags & cash prizes for the Top 100 teams</li><li><strong>Career Opportunities:</strong> Internship & incubation opportunities for standout teams</li><li><strong>Certificates:</strong> Provided for all successful project submissions</li></ul>",
+      "startDate": "11-04-2025",
+      "endDate": "20-04-2025",
+      "venue": "Online",
+      "prize": "$8,770",
+      "level": "Intermediate",
+      "category": ["track"],
+      "registrationStatus": "open",
+      "registrationDeadline": "07-04-2025",
+      "teamSize": "1 - 4 members",
+      "registrationLink": "",
+"timeline": [
+  { "time": "31 Mar 25, 11:59 PM IST", "event": "Registration Deadline" },
+  { "time": "04 Apr 25, 10:00 AM IST", "event": "Problem Statements Announced" },
+  { "time": "11 Apr 25, 12:00 AM IST", "event": "Hackathon Begins" },
+  { "time": "12 Apr 25, 11:59 PM IST", "event": "Problem Statement Selection Deadline" },
+  { "time": "13 Apr 25, 06:00 PM IST", "event": "Mentor Call 1 - Idea Discussion" },
+  { "time": "15 Apr 25, 06:00 PM IST", "event": "Mentor Call 2 - Prototype Discussion" },
+  { "time": "20 Apr 25, 11:59 PM IST", "event": "Final Submission Deadline" },
+  { "time": "27 Apr 25, 05:00 PM IST", "event": "Results Announcement" }
+]
+
+      "requirements": "Open to All"
+    },
   ])
 
   const filters = [

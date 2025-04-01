@@ -156,7 +156,7 @@ function Hackathons() {
   { "time": "15 Apr 25, 06:00 PM IST", "event": "Mentor Call 2 - Prototype Discussion" },
   { "time": "20 Apr 25, 11:59 PM IST", "event": "Final Submission Deadline" },
   { "time": "27 Apr 25, 05:00 PM IST", "event": "Results Announcement" }
-]
+],
 
       "requirements": "Open to All"
     },

@@ -144,7 +144,7 @@ function Hackathons() {
       "level": "Beginner",
       "category": ["track"],
       "registrationStatus": "open",
-      "registrationDeadline": "07-04-2025",
+      "registrationDeadline": "05-04-2025",
       "teamSize": "1 - 4 members",
       "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfJMwKGe_sHJJiJ4dSHNJD__KITVUC57gSg8MB9UXYCnON40w/viewform?usp=header",
 "timeline": [

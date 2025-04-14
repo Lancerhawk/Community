@@ -111,7 +111,7 @@ function Clubs() {
     let fileName;
 
     if (showRegisterModal) {
-      formUrl = '/registerclub.pdf';
+      formUrl = '/registerclub (8).pdf';
       fileName = 'club_registration_form.pdf';
     } else if (showJoinModal && selectedClub) {
       if (selectedClub.name === 'Web Development Club') {

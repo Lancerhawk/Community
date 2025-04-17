@@ -102,7 +102,7 @@ function Hackathons() {
       "startDate": "09-05-2025",
       "endDate": "10-05-2025",
       "venue": "Offline",
-      "prize": "30,000 Rs.",
+      "prize": "₹15,000",
       "level": "Beginner",
       "category": ["open"],
       "registrationStatus": "open",

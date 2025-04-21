@@ -22,9 +22,12 @@ function Navbar() {
 
       <nav className="navbar">
         <div className="navbar-container">
-
-        <img src={heading} alt="" className='logo' 
-          draggable="false"/>
+          <div className="left-section">
+            <img src={heading} alt="" className='logo' draggable="false"/>
+            {/* <NavLink to="/login" className="get-started-btn" onClick={closeSidebar}>
+              Get Started
+            </NavLink> */}
+          </div>
 
           <button
             className={`burger-menu ${isOpen ? 'open' : ''}`}
@@ -84,15 +87,33 @@ function Navbar() {
                   Startups
                 </NavLink>
               </li>
+              <li className="has-dropdown">
+                <span className="nav-item-trigger">Content</span>
+                <div className="dropdown-menu">
+                  <NavLink to="/courses" onClick={closeSidebar}>
+                    <div className="menu-item-content">
+                      <span className="menu-item-title">Courses</span>
+                    </div>
+                  </NavLink>
+                  <NavLink to="/roadmaps" onClick={closeSidebar}>Roadmaps</NavLink>
+                </div>
+              </li>
               <li>
                 <NavLink
-                  to="/news"
+                  to="/gallery"
                   className={({ isActive }) => (isActive ? 'active' : '')}
-                  onClick={closeSidebar} 
+                  onClick={closeSidebar}
                 >
-                  News
+                  Gallery
                 </NavLink>
               </li>
+              {isOpen && window.innerWidth < 450 && (
+                <li>
+                  {/* <NavLink to="/login" className="get-started-btn" onClick={closeSidebar}>
+                    Get Started
+                  </NavLink> */}
+                </li>
+              )}
             </ul>
             {/* <button className="theme-toggle" onClick={toggleTheme}>
             {theme === 'light' ? <FaMoon /> : <FaSun />}

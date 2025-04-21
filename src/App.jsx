@@ -3,13 +3,21 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home'
 import Hackathons from './pages/Hackathons/Hackathons'
-import News from './pages/News/News'
 import './App.css'
 import About from './pages/About/About'
 import CodeBackground from './components/CodeBackground/CodeBackground'
 import CustomCursor from './components/CodeBackground/CustomCursor'
 import Clubs from './pages/Clubs/Clubs'
 import Startups from './pages/Startups/Startups'
+import Login from './pages/Login/Login'
+import Signup from './pages/Signup/Signup'
+import ForgotPassword from './pages/ForgotPassword/ForgotPassword'
+import Courses from './pages/Courses/Courses'
+import Roadmaps from './pages/Roadmaps/Roadmaps'
+import Gallery from './pages/Gallery/Gallery'
+import HtmlCourse from './pages/Learning/HtmlCourse/HtmlCourse'
+import CssCourse from './pages/Learning/CssCourse/CssCourse'
+// import Admin from './pages/Admin/Admin'
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -44,9 +52,17 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/hackathons" element={<Hackathons />} />
-            <Route path="/news" element={<News />} />
             <Route path="/clubs" element={<Clubs />} />
             <Route path="/startups" element={<Startups />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/roadmaps" element={<Roadmaps />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/learning/html/*" element={<HtmlCourse />} />
+            <Route path="/learning/css/*" element={<CssCourse />} />
+            {/* <Route path="/admin" element={<Admin />} /> */}
+            <Route path="/forgot-password" element={<ForgotPassword />} />
           </Routes>
         </main>
       </div>

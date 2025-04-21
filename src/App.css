@@ -57,16 +57,24 @@
 
 
 .main-content {
-  padding-top: 80px; /* Space for fixed navbar */
+  padding-top: 80px;
   min-height: calc(100vh - 80px);
   position: relative;
   z-index: 2;
   animation: fadeIn 0.8s ease-out;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+::selection{
+  background-color: rgb(65, 0, 150);
+  color:rgb(255, 255, 255);
 }
 
 .page-title {

@@ -31,7 +31,18 @@ const clubsData = [
     name: 'Web Development Club',
     domain: 'Web Development',
     shortDescription: 'Crafting modern web experiences and solutions',
-    fullDescription: 'Our Web Development Club is a dynamic community of aspiring developers who are passionate about creating innovative web solutions. We focus on both frontend and backend technologies, organizing workshops, coding sessions, and collaborative projects.',
+    leadership: {
+      leader: 'Arin Jain',
+      manager: 'Arpit Shukla'
+    },
+    rules: [
+      'Weekly offline sessions mandatory for all members',
+      'Hybrid learning with online resources available',
+      'Project implementation after each module',
+      'Regular progress tracking and updates required',
+      'Zero tolerance for misconduct or disruption'
+    ],
+    fullDescription: 'Our Web Development Club is a dynamic community of aspiring developers who are passionate about creating innovative web solutions. We focus on both frontend and backend technologies, organizing workshops, coding sessions, and collaborative projects. The club follows a structured curriculum with defined milestones and emphasizes practical learning.',
     activities: [
       'Weekly coding workshops',
       'Project collaborations',
@@ -45,7 +56,18 @@ const clubsData = [
     name: 'DSA Club',
     domain: 'Data Structures and Algorithms',
     shortDescription: 'Solving complex problems through efficient algorithms',
-    fullDescription: 'Our DSA Club is dedicated to mastering the fundamentals of data structures and algorithms. We organize coding challenges, algorithmic problems, and workshops to enhance problem-solving skills.',
+    leadership: {
+      leader: 'Ayushman Gupta',
+      manager: 'Veerendra Soni'
+    },
+    rules: [
+      'Mandatory participation in weekly problem-solving sessions',
+      'Regular code reviews and optimization discussions',
+      'Structured learning path from basic to advanced algorithms',
+      'Collaborative problem-solving encouraged',
+      'Active participation in coding competitions'
+    ],
+    fullDescription: 'Our DSA Club is dedicated to mastering the fundamentals of data structures and algorithms. We organize coding challenges, algorithmic problems, and workshops to enhance problem-solving skills. Members follow a systematic approach to learning with hands-on implementation.',
     activities: [
       'Weekly coding challenges',
       'Algorithm design sessions',
@@ -55,6 +77,33 @@ const clubsData = [
     ],
     icon: '📝'
   },
+  {
+    id: 3,
+    name: 'Data Science Club',
+    domain: 'Data Science',
+    shortDescription: 'Exploring data analytics and machine learning solutions',
+    leadership: {
+      leader: '------Yet to be Choosen-------',
+      manager: '------Yet to be Choosen-------'
+    },
+    rules: [
+      'Regular attendance in data analysis workshops',
+      'Participation in team-based data projects',
+      'Adherence to data ethics guidelines',
+      'Proper documentation of analysis methods',
+      'Sharing of insights and findings with the club'
+    ],
+    fullDescription: 'The Data Science Club is a vibrant community focused on exploring and implementing data analytics, machine learning, and statistical analysis. We work with real-world datasets, develop predictive models, and learn industry-standard tools and techniques. Our goal is to help members build strong foundations in data science while working on practical projects.',
+    activities: [
+      'Data analysis workshops',
+      'Machine learning projects',
+      'Statistical modeling sessions',
+      'Data visualization challenges',
+      'Industry expert seminars'
+    ],
+    icon: '📊'
+  },
+  
 //   {
 //     id: 2,
 //     name: 'AI/ML Club',
@@ -117,7 +166,14 @@ function Clubs() {
       if (selectedClub.name === 'Web Development Club') {
         formUrl = '/Web Development Club Approval Form.pdf';
         fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
-      } else {
+      }else if (selectedClub.name === 'DSA Club') {
+        formUrl = '/DSAclub.pdf';
+        fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
+      }else if (selectedClub.name === 'Data Science Club') {
+        formUrl = '/DataScienceClub.pdf';
+        fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
+      }
+       else {
         alert('Form not available yet for this club. Please check back later.');
         return;
       }
@@ -166,13 +222,24 @@ function Clubs() {
       {selectedClub && !showJoinModal && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={closeModal}>Close</button>
+            <button className="modal-close" onClick={closeModal}>×</button>
             <h2>{selectedClub.name}</h2>
-            <p className="modal-description">{selectedClub.fullDescription}</p>
-            <div className="activities-section">
-              <h3>Club Activities</h3>
-              <ul className="activities-list">
-                {selectedClub.activities.map((activity, index) => (
+          <div className="club-leadership">
+            <h3>Club Leadership</h3>
+            <p><strong>Club Leader:</strong> {selectedClub.leadership.leader}</p>
+            <p><strong>Club Manager:</strong> {selectedClub.leadership.manager}</p>
+          </div>
+          <p className="modal-description">{selectedClub.fullDescription}</p>
+          <h3>Club Rules</h3>
+          <ul>
+            {selectedClub.rules.map((rule, index) => (
+              <li key={index}>{rule}</li>
+            ))}
+          </ul>
+          <div className="activities-section">
+            <h3>Club Activities</h3>
+            <ul className="activities-list">
+              {selectedClub.activities.map((activity, index) => (
                   <li key={index}>{activity}</li>
                 ))}
               </ul>
@@ -214,7 +281,7 @@ function Clubs() {
             <button 
               className="modal-close" 
               onClick={() => setShowRegisterModal(false)}
-            >Close</button>
+            >×</button>
             <h2>Club Registration Process</h2>
             <div className="rules-section">
               <h3>Requirements:</h3>

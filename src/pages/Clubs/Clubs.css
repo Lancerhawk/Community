@@ -22,7 +22,7 @@
 
 .clubs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 2rem;
   padding: 1rem;
 }
@@ -74,7 +74,7 @@
   background: var(--card-gradient);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .club-card h2 {
@@ -207,23 +207,102 @@
   margin-bottom: 1.5rem;
   font-size: 2rem;
   text-align: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.club-leadership {
+  background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.1), rgba(var(--primary-rgb), 0.05));
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.club-leadership h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.club-leadership h3::before {
+  content: '👥';
+  font-size: 1.2rem;
+}
+
+.club-leadership p {
+  margin: 0.5rem 0;
+  color: var(--text-color);
+  font-size: 1.1rem;
 }
 
 .modal-description {
   color: var(--text-color);
   line-height: 1.8;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-left: 3px solid var(--primary-color);
+  background: rgba(var(--primary-rgb), 0.05);
+  border-radius: 0 10px 10px 0;
 }
 
-.activities-section h3 {
+.modal-content h3 {
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin: 1.5rem 0 1rem;
   font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modal-content h3:nth-of-type(2)::before {
+  content: '📋';
+  font-size: 1.2rem;
+}
+
+.modal-content h3:nth-of-type(3)::before {
+  content: '🎯';
+  font-size: 1.2rem;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-content ul li {
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.modal-content ul li::before {
+  content: '•';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.activities-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.05), rgba(var(--primary-rgb), 0.02));
+  border-radius: 15px;
 }
 
 .activities-list {
   list-style-type: none;
   padding: 0;
+  display: grid;
+  gap: 0.8rem;
 }
 
 .activities-list li {

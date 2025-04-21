@@ -137,7 +137,7 @@ function Startups() {
               </div>
             </div>
             <button className="modal-close" onClick={() => setShowModal(false)}>
-              Close
+            ×
             </button>
           </div>
         </div>
@@ -184,8 +184,7 @@ function Startups() {
             <button
               className="modal-close"
               onClick={() => setShowStartupApplicationModal(false)}
-            >
-              Close
+            >×
             </button>
           </div>
         </div>
@@ -221,8 +220,7 @@ function Startups() {
               <button
                 className="modal-close"
                 onClick={() => setShowApplicationModal(false)}
-              >
-                Close
+              >×
               </button>
             </div>
           </div>

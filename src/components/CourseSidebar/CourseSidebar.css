@@ -167,6 +167,12 @@ button.sidebar-toggle svg  {
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 20px;
   padding-bottom: 0;
+}.dropdown-content-html {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 20px;
+  padding-bottom: 0;
 }
 
 .dropdown-content-css.show {
@@ -189,6 +195,12 @@ button.sidebar-toggle svg  {
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding-bottom 0.3s ease;
 }.dropdown-content-advance.show {
   max-height: 470px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding-bottom 0.3s ease;
+}.dropdown-content-html.show {
+  max-height: 535px;
   display: flex;
   justify-content: center;
   padding-bottom: 10px;

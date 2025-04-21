@@ -61,7 +61,7 @@ function HTMLSidebar() {
                                 Miscellaneous
                                 <span className="dropdown-icon">{isMiscCollapsed ? '▼' : '▲'}</span>
                             </button>
-                            <ul className={`dropdown-content ${isMiscCollapsed ? '' : 'show'}`}>
+                            <ul className={`dropdown-content-html ${isMiscCollapsed ? '' : 'show'}`}>
                                 <li className={currentPath.includes('/canvas') ? 'active' : ''}>
                                     <Link to="/learning/html/misc/canvas">Canvas</Link>
                                 </li>

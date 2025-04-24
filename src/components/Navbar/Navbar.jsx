@@ -87,7 +87,7 @@ function Navbar() {
                   Startups
                 </NavLink>
               </li>
-              <li className="has-dropdown">
+              {/*<li className="has-dropdown">
                 <span className="nav-item-trigger">Content</span>
                 <div className="dropdown-menu">
                   <NavLink to="/courses" onClick={closeSidebar}>
@@ -97,7 +97,7 @@ function Navbar() {
                   </NavLink>
                   <NavLink to="/roadmaps" onClick={closeSidebar}>Roadmaps</NavLink>
                 </div>
-              </li>
+              </li>*/}
               <li>
                 <NavLink
                   to="/gallery"

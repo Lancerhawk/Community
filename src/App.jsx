@@ -12,8 +12,8 @@ import Startups from './pages/Startups/Startups'
 import Login from './pages/Login/Login'
 import Signup from './pages/Signup/Signup'
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword'
-import Courses from './pages/Courses/Courses'
-import Roadmaps from './pages/Roadmaps/Roadmaps'
+// import Courses from './pages/Courses/Courses'
+// import Roadmaps from './pages/Roadmaps/Roadmaps'
 import Gallery from './pages/Gallery/Gallery'
 import HtmlCourse from './pages/Learning/HtmlCourse/HtmlCourse'
 import CssCourse from './pages/Learning/CssCourse/CssCourse'
@@ -56,8 +56,8 @@ function App() {
             <Route path="/startups" element={<Startups />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/roadmaps" element={<Roadmaps />} />
+{/*             <Route path="/courses" element={<Courses />} /> */}
+{/*             <Route path="/roadmaps" element={<Roadmaps />} /> */}
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/learning/html/*" element={<HtmlCourse />} />
             <Route path="/learning/css/*" element={<CssCourse />} />

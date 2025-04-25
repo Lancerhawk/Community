@@ -17,6 +17,21 @@ function ForgotPassword() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [resetSuccess, setResetSuccess] = useState(false);
+  const [passwordRequirements, setPasswordRequirements] = useState({
+    length: false,
+    capital: false,
+    numbers: false,
+    lowercase: false
+  });
+
+  const validatePassword = (password) => {
+    setPasswordRequirements({
+      length: password.length >= 8,
+      capital: /[A-Z]/.test(password),
+      numbers: /[0-9]/.test(password),
+      lowercase: (password.match(/[a-z]/g) || []).length >= 4
+    });
+  };
 
   const handleSendOtp = async (e) => {
     e.preventDefault();
@@ -40,6 +55,11 @@ function ForgotPassword() {
     e.preventDefault();
     if (newPassword !== confirmPassword) {
       setError('Passwords do not match!');
+      return;
+    }
+
+    if (!Object.values(passwordRequirements).every(Boolean)) {
+      setError('Please meet all password requirements');
       return;
     }
 
@@ -116,7 +136,10 @@ function ForgotPassword() {
                 <input
                   type={showPassword ? "text" : "password"}
                   value={newPassword}
-                  onChange={(e) => setNewPassword(e.target.value)}
+                  onChange={(e) => {
+                    setNewPassword(e.target.value);
+                    validatePassword(e.target.value);
+                  }}
                   required
                   className="animated-input"
                 />
@@ -128,6 +151,32 @@ function ForgotPassword() {
                 >
                   {showPassword ? "🙈" : "👁️"}
                 </button>
+                <div className="password-requirements">
+                  <div className="password-requirement">
+                    <span className={`requirement-icon ${passwordRequirements.length ? 'valid' : 'invalid'}`}>
+                      {passwordRequirements.length ? '✓' : '·'}
+                    </span>
+                    At least 8 characters
+                  </div>
+                  <div className="password-requirement">
+                    <span className={`requirement-icon ${passwordRequirements.capital ? 'valid' : 'invalid'}`}>
+                      {passwordRequirements.capital ? '✓' : '·'}
+                    </span>
+                    One capital letter
+                  </div>
+                  <div className="password-requirement">
+                    <span className={`requirement-icon ${passwordRequirements.numbers ? 'valid' : 'invalid'}`}>
+                      {passwordRequirements.numbers ? '✓' : '·'}
+                    </span>
+                    One or more numbers
+                  </div>
+                  <div className="password-requirement">
+                    <span className={`requirement-icon ${passwordRequirements.lowercase ? 'valid' : 'invalid'}`}>
+                      {passwordRequirements.lowercase ? '✓' : '·'}
+                    </span>
+                    Four or more lowercase letters
+                  </div>
+                </div>
               </div>
             </div>
             <div className="form-group">

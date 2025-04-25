@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 import './ForgotPassword.css';
-
-const API_URL = 'http://localhost:3001';
+import api from '../../api'
 
 function ForgotPassword() {
   const navigate = useNavigate();
@@ -25,7 +24,7 @@ function ForgotPassword() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post(`${API_URL}/send-reset-otp`, { email });
+      const response = await api.post(`./send-reset-otp`, { email });
       setMessage(response.data.message);
       setOtpSent(true);
       // Clear success message after a delay
@@ -49,7 +48,7 @@ function ForgotPassword() {
 
     try {
       // eslint-disable-next-line no-unused-vars
-      const response = await axios.post(`${API_URL}/reset-password`, {
+      const response = await api.post(`/reset-password`, {
         email,
         otp,
         newPassword

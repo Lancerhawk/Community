@@ -53,7 +53,7 @@ function Navbar() {
           <div className="left-section">
             <img src={heading} alt="" className='logo' draggable="false"/>
             {isLoggedIn ? (
-              <div className="user-menu-container">
+              <div className="user-menu-container-navbar">
                 <button className="user-icon-btn">
                   <i className="fas fa-user"></i>
                   {username && <span className="username-display">{username}</span>}
@@ -139,16 +139,40 @@ function Navbar() {
                       </div>
                     </li>
                   )}
-                  
-                  
                 </>
               )}
             </ul>
             {isOpen && window.innerWidth < 450 && (
             <div className="mobile-get-started">
-            <NavLink to="/login" className="mobile-get-started-btn" onClick={closeSidebar}>
-              Get Started
-            </NavLink>
+            {isLoggedIn ? (
+              <div className="user-menu-container-sidebar">
+                <button className="user-icon-btn">
+                  <i className="fas fa-user"></i>
+                  {username && <span className="username-display">{username}</span>}
+                </button>
+                  {/* <NavLink to="/userdashboard" onClick={closeSidebar}>
+                    Dashboard
+                  </NavLink>
+                  <NavLink to="/settings" onClick={closeSidebar}>
+                    Settings
+                  </NavLink> */}
+                  <button
+                    onClick={() => {
+                      localStorage.removeItem('token');
+                      setIsLoggedIn(false);
+                      navigate('/');
+                      closeSidebar();
+                      window.location.reload();
+                    }}
+                  >
+                    Logout
+                  </button>
+              </div>
+            ) : (
+              <NavLink to="/login" className="get-started-btn" onClick={closeSidebar}>
+                Get Started
+              </NavLink>
+            )}
           </div>
           )}
           </div>

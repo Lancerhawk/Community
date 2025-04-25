@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Signup.css';
 import axios from 'axios';
+import api from '../../api';
 
 function Signup() {
   const navigate = useNavigate();
@@ -55,7 +56,7 @@ function Signup() {
   const checkAvailability = async (field, value) => {
     if (!value) return;
     try {
-      const response = await axios.post('http://localhost:3001/check-availability', {
+      const response = await api.post('./check-availability', {
         [field]: value
       });
       setErrors(prevErrors => ({
@@ -82,7 +83,7 @@ function Signup() {
 
     // Check for existing email and username
     try {
-      const availabilityResponse = await axios.post('http://localhost:3001/check-availability', {
+      const availabilityResponse = await api.post('./check-availability', {
         email: formData.email,
         username: formData.username
       });
@@ -97,7 +98,7 @@ function Signup() {
       }
 
       setIsLoading(true);
-      const response = await axios.post('http://localhost:3001/send-otp', {
+      const response = await api.post('./send-otp', {
         email: formData.email
       });
 
@@ -116,13 +117,13 @@ function Signup() {
     e.preventDefault();
 
     try {
-      const verifyResponse = await axios.post('http://localhost:3001/verify-otp', {
+      const verifyResponse = await api.post('./verify-otp', {
         email: formData.email,
         otp
       });
 
       if (verifyResponse.data.success) {
-        const registerResponse = await axios.post('http://localhost:3001/register', {
+        const registerResponse = await api.post('./register', {
           name: formData.name,
           username: formData.username,
           email: formData.email,

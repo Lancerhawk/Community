@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
-
-const API_URL = 'http://localhost:3001';
+import api from '../../api'; // or adjust the path accordingly
 
 function Login() {
   const navigate = useNavigate();
@@ -14,6 +13,7 @@ function Login() {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [loginSuccess, setLoginSuccess] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,31 +21,23 @@ function Login() {
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${API_URL}/login`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await api.post('/login', formData);
 
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Login failed');
-      }
+      const data = response.data;
 
       localStorage.setItem('token', data.token);
       localStorage.setItem('userId', data.userId);
       localStorage.setItem('username', data.username);
       localStorage.setItem('isVerified', data.veri === 'verified' ? 'true' : 'false');
+
       setLoginSuccess(true);
       setTimeout(() => {
         navigate('/courses');
         window.location.reload();
       }, 1000);
     } catch (err) {
-      setError(err.message);
+      const errorMessage = err.response?.data?.error || err.message;
+      setError(errorMessage);
     } finally {
       setIsLoading(false);
     }
@@ -53,13 +45,8 @@ function Login() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
-
-  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="login-container">
@@ -70,33 +57,15 @@ function Login() {
         <form onSubmit={handleSubmit} className="form-animation">
           <div className="form-group">
             <div className="input-container">
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="animated-input"
-              />
+              <input type="email" name="email" value={formData.email} onChange={handleChange} required className="animated-input" />
               <label className="floating-label">Email</label>
             </div>
           </div>
           <div className="form-group">
             <div className="input-container">
-              <input
-                type={showPassword ? "text" : "password"}
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-                required
-                className="animated-input"
-              />
+              <input type={showPassword ? "text" : "password"} name="password" value={formData.password} onChange={handleChange} required className="animated-input" />
               <label className="floating-label">Password</label>
-              <button
-                type="button"
-                className="toggle-password2"
-                onClick={() => setShowPassword(!showPassword)}
-              >
+              <button type="button" className="toggle-password2" onClick={() => setShowPassword(!showPassword)}>
                 {showPassword ? "🙈" : "👁️"}
               </button>
             </div>
@@ -112,7 +81,7 @@ function Login() {
           </div>
         </form>
         <p className="signup-link">
-          Dont have an account? <a href="#" onClick={() => navigate('/register')}>Sign up</a>
+          Don’t have an account? <a href="#" onClick={() => navigate('/register')}>Sign up</a>
         </p>
       </div>
     </div>

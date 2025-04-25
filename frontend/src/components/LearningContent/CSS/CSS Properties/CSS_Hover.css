@@ -1,0 +1,68 @@
+.hover-bg {
+    padding: 15px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hover-bg:hover {
+    background-color: lightblue;
+    color: black;
+  }
+  
+  .hover-text {
+    padding: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .hover-text:hover {
+    color: red;
+  }
+  
+  .hover-scale {
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    border: 1px solid #000;
+    cursor: pointer;
+    background-color: #f1f1f1;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.1);
+  }
+  
+  .reveal-box {
+    padding: 15px;
+    border: 1px solid #aaa;
+    position: relative;
+    background-color: #fafafa;
+    margin-top: 10px;
+  }
+  
+  .hidden-text {
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    color: #333;
+  }
+  
+  .reveal-box:hover .hidden-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  .hover-example {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .hover-example:hover {
+    background-color: #0056b3;
+  }
+  

@@ -44,6 +44,11 @@ function Navbar() {
     setIsOpen(false);
   };
 
+  const usertaking = () =>{
+    navigate('/');
+  }
+  
+
   return (
     <div>
       {isOpen && <div className="backdrop" onClick={closeSidebar}></div>}
@@ -51,7 +56,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="left-section">
-            <img src={heading} alt="" className='logo' draggable="false" />
+            <img src={heading} alt="" className='logo' draggable="false" onClick={usertaking}/>
             {isLoggedIn ? (
               <div className="user-menu-container-navbar">
                 <button className="user-icon-btn">

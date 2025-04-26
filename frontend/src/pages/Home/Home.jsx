@@ -21,8 +21,6 @@ function Home() {
     awards: 0
   });
 
-  
-
   useEffect(() => {
     const targetStats = {
       members: 500,
@@ -153,7 +151,7 @@ function Home() {
           rel="noopener noreferrer"
           className="join-btn"
         >
-          Join Our Community
+          Join Our Community on Whatsapp
         </a>
         <div className="community-social-links">
           <a

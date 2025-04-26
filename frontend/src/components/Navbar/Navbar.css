@@ -583,9 +583,7 @@
   
 }
 @media (max-width: 450px) {
-  .get-started-btn {
-    display: none;
-  }
+  
   .nav-links.open .get-started-btn {
     display: block;
     font-size: 1rem;
@@ -604,7 +602,7 @@
   }
 
 }@media(max-width: 450px) {
-  .user-menu-container-navbar{
+  .logo{
     display: none;
   }
 }

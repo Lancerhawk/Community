@@ -16,7 +16,7 @@ function Navbar() {
     const verificationStatus = localStorage.getItem('isVerified') === 'true';
     setIsLoggedIn(!!token);
     setIsVerified(verificationStatus);
-    
+
     if (storedUsername) {
       setUsername(storedUsername);
     } else if (token) {
@@ -25,23 +25,23 @@ function Navbar() {
           'Authorization': `Bearer ${token}`
         }
       })
-      .then(response => response.json())
-      .then(data => {
-        if (data.username) {
-          setUsername(data.username);
-          localStorage.setItem('username', data.username);
-        }
-      })
-      .catch(error => console.error('Error fetching user data:', error));
+        .then(response => response.json())
+        .then(data => {
+          if (data.username) {
+            setUsername(data.username);
+            localStorage.setItem('username', data.username);
+          }
+        })
+        .catch(error => console.error('Error fetching user data:', error));
     }
   }, []);
 
   const toggleMenu = () => {
-    setIsOpen((prev) => !prev); 
+    setIsOpen((prev) => !prev);
   };
 
   const closeSidebar = () => {
-    setIsOpen(false); 
+    setIsOpen(false);
   };
 
   return (
@@ -51,7 +51,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="left-section">
-            <img src={heading} alt="" className='logo' draggable="false"/>
+            <img src={heading} alt="" className='logo' draggable="false" />
             {isLoggedIn ? (
               <div className="user-menu-container-navbar">
                 <button className="user-icon-btn">
@@ -87,10 +87,10 @@ function Navbar() {
 
           <button
             className={`burger-menu ${isOpen ? 'open' : ''}`}
-            onClick={toggleMenu} 
+            onClick={toggleMenu}
             aria-label="Toggle menu"
           >
-            {isOpen ? '☓' : '☰'} 
+            {isOpen ? '☓' : '☰'}
           </button>
 
           <div className={`nav-links ${isOpen ? 'open' : ''}`}>
@@ -132,7 +132,7 @@ function Navbar() {
                           </div>
                         </NavLink>
                         <NavLink to="/roadmaps" onClick={closeSidebar}>Roadmaps</NavLink>
-                      
+
                         <NavLink to="/gallery" className={({ isActive }) => (isActive ? 'active' : '')} onClick={closeSidebar}>
                           Gallery
                         </NavLink>
@@ -142,41 +142,9 @@ function Navbar() {
                 </>
               )}
             </ul>
-            {isOpen && window.innerWidth < 450 && (
-            <div className="mobile-get-started">
-            {isLoggedIn ? (
-              <div className="user-menu-container-sidebar">
-                <button className="user-icon-btn">
-                  <i className="fas fa-user"></i>
-                  {username && <span className="username-display">{username}</span>}
-                </button>
-                  {/* <NavLink to="/userdashboard" onClick={closeSidebar}>
-                    Dashboard
-                  </NavLink>
-                  <NavLink to="/settings" onClick={closeSidebar}>
-                    Settings
-                  </NavLink> */}
-                  <button
-                    onClick={() => {
-                      localStorage.removeItem('token');
-                      setIsLoggedIn(false);
-                      navigate('/');
-                      closeSidebar();
-                      window.location.reload();
-                    }}
-                  >
-                    Logout
-                  </button>
-              </div>
-            ) : (
-              <NavLink to="/login" className="get-started-btn" onClick={closeSidebar}>
-                Get Started
-              </NavLink>
-            )}
+            
           </div>
-          )}
-          </div>
-          
+
         </div>
       </nav>
     </div>

@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema({
   collegeName: { type: String, required: true },
   location: { type: String, required: true },
   role: { type: String, default: 'User', required: true },
-  isVerified: { type: Boolean, default: false }
+  isVerified: { type: Boolean, default: true }
 });
 
 const UserModel = mongoose.model("users", UserSchema);

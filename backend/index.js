@@ -64,8 +64,28 @@ app.post('/send-otp', async (req, res) => {
         const mailOptions = {
             from: process.env.EMAIL_USER,
             to: email,
-            subject: 'Your OTP Code',
-            text: `Your OTP code is: ${otp}. It is valid for 5 minutes.`,
+            subject: 'Verify Your Email - CodingEra Community',
+            html: `
+                <div style="background-color: #f6f6f6; padding: 20px; font-family: Arial, sans-serif;">
+                    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+                        <div style="text-align: center; margin-bottom: 30px;">
+                            <h1 style="color: #333; margin: 0;">Welcome to CodingEra Community!</h1>
+                        </div>
+                        <div style="color: #555; font-size: 16px; line-height: 1.5;">
+                            <p>Hello,</p>
+                            <p>Thank you for joining CodingEra Community! To complete your registration, please use the following verification code:</p>
+                            <div style="background-color: #f8f8f8; padding: 15px; text-align: center; margin: 20px 0; border-radius: 5px;">
+                                <h2 style="color: #2c3e50; letter-spacing: 5px; margin: 0;">${otp}</h2>
+                            </div>
+                            <p style="color: #777; font-size: 14px;">This verification code is valid for 5 minutes only. For security reasons, please do not share this code with anyone.</p>
+                            <p style="margin-top: 30px;">Welcome aboard! We're excited to have you join our community of developers and tech enthusiasts.</p>
+                            <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; color: #888; font-size: 14px;">
+                                <p>© 2024 CodingEra Community. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
         };
         
         const info = await transporter.sendMail(mailOptions);
@@ -81,6 +101,7 @@ app.post('/send-otp', async (req, res) => {
         res.status(500).json({ error: 'Failed to send OTP' });
     }
 });
+
 
 // ** Verify OTP **
 app.post('/verify-otp', (req, res) => {
@@ -163,7 +184,6 @@ app.post('/register', async (req, res) => {
         res.status(500).json({ error: 'Internal server error' });
     }
 });
-
 // ** Send Reset OTP **
 app.post('/send-reset-otp', async (req, res) => {
     const { email } = req.body;
@@ -182,8 +202,43 @@ app.post('/send-reset-otp', async (req, res) => {
         const mailOptions = {
             from: process.env.EMAIL_USER,
             to: email,
-            subject: 'Password Reset OTP',
-            text: `Your password reset OTP is: ${otp}. It is valid for 5 minutes.`,
+            subject: 'Password Reset OTP - CodingEra Community',
+            html: `
+                <div style="background-color: #f6f6f6; padding: 20px; font-family: Arial, sans-serif;">
+                    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+                        <div style="text-align: center; margin-bottom: 30px;">
+                            <h1 style="color: #333; margin: 0;">Password Reset Request</h1>
+                            <p style="color: #666; margin-top: 10px;">CodingEra Community</p>
+                        </div>
+                        <div style="color: #555; font-size: 16px; line-height: 1.5;">
+                            <p>Hello,</p>
+                            <p>We received a request to reset your password for your CodingEra Community account. Your security is important to us, and we want to ensure that only you have access to your account.</p>
+                            <div style="background-color: #f8f8f8; padding: 20px; text-align: center; margin: 25px 0; border-radius: 8px; border: 1px dashed #ccc;">
+                                <p style="margin: 0 0 10px; color: #666;">Your Password Reset Code:</p>
+                                <h2 style="color: #2c3e50; letter-spacing: 8px; margin: 0; font-size: 32px;">${otp}</h2>
+                            </div>
+                            <div style="background-color: #fff8dc; padding: 15px; border-radius: 5px; margin: 20px 0;">
+                                <p style="margin: 0; color: #666;">⚠️ Important Security Notes:</p>
+                                <ul style="margin: 10px 0 0; padding-left: 20px; color: #666;">
+                                    <li>This code will expire in 5 minutes</li>
+                                    <li>Never share this code with anyone</li>
+                                    <li>Our team will never ask for this code</li>
+                                </ul>
+                            </div>
+                            <p>If you didn't request this password reset, please ignore this email or contact our support team immediately at <a href="mailto:support@codingera.com" style="color: #007bff; text-decoration: none;">support@codingera.com</a></p>
+                            <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+                                <p style="color: #888; font-size: 14px; text-align: center; margin: 0;">Stay connected with the CodingEra Community</p>
+                                <div style="text-align: center; margin-top: 15px;">
+                                    <a href="#" style="color: #007bff; text-decoration: none; margin: 0 10px;">Website</a>
+                                    <a href="#" style="color: #007bff; text-decoration: none; margin: 0 10px;">Twitter</a>
+                                    <a href="#" style="color: #007bff; text-decoration: none; margin: 0 10px;">GitHub</a>
+                                </div>
+                                <p style="color: #888; font-size: 12px; text-align: center; margin-top: 20px;">© 2024 CodingEra Community. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
         };
         
         await transporter.sendMail(mailOptions);

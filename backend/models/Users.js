@@ -7,7 +7,7 @@ const UserSchema = new mongoose.Schema({
   password: String,
   collegeName: { type: String, required: true },
   location: { type: String, required: true },
-  role: { type: String, default: 'User', required: true },
+  roleAdmin: { type: Boolean, default: false },
   isVerified: { type: Boolean, default: true }
 });
 

@@ -17,6 +17,8 @@ import Roadmaps from './pages/Roadmaps/Roadmaps'
 import Gallery from './pages/Gallery/Gallery'
 import HtmlCourse from './pages/Learning/HtmlCourse/HtmlCourse'
 import CssCourse from './pages/Learning/CssCourse/CssCourse'
+import Admin from './pages/AdminPanel/Admin'
+import HackathonsPanel from './pages/AdminPanel/HackathonsPanel'
 // import Admin from './pages/AdminPanel/Admin'
 // import Users from './pages/Users/Users'
 
@@ -31,15 +33,20 @@ function ScrollToTop() {
 }
 
 // eslint-disable-next-line react/prop-types
-function ProtectedRoute({ children, requireVerification = false }) {
+function ProtectedRoute({ children, requireVerification = false, requireRole = false}) {
   const isAuthenticated = !!localStorage.getItem('token');
   const isVerified = localStorage.getItem('isVerified') === 'true';
+  const isAdmin = localStorage.getItem('roleAdmin') === 'true';
 
   if (!isAuthenticated) {
     return <Navigate to="/login" />;
   }
 
   if (requireVerification && !isVerified) {
+    return <Navigate to="/" />;
+  }
+
+  if (requireRole && !isAdmin) {
     return <Navigate to="/" />;
   }
 
@@ -73,7 +80,8 @@ function App() {
             <Route path="/gallery" element={<ProtectedRoute requireVerification={true}><Gallery /></ProtectedRoute>} />
             <Route path="/learning/html/*" element={<ProtectedRoute requireVerification={true}><HtmlCourse /></ProtectedRoute>} />
             <Route path="/learning/css/*" element={<ProtectedRoute requireVerification={true}><CssCourse /></ProtectedRoute>} />
-            {/* <Route path="/admin" element={<ProtectedRoute><Admin/></ProtectedRoute>} /> */}
+            <Route path="/admin" element={<ProtectedRoute requireRole={true}><Admin/></ProtectedRoute>} />
+            <Route path="/hackathon-add" element={<ProtectedRoute requireVerification={true} requireRole={true}><HackathonsPanel/></ProtectedRoute>} />
           </Routes>
         </main>
       </div>

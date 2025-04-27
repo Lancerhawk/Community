@@ -61,9 +61,9 @@ function Gallery() {
       <h1 className="gallery-title">Our Gallery</h1>
       {/* <p className="gallery-subtitle">Capturing moments of innovation and learning</p> */}
 
-      <div className='gallery-max' style={{ height: '600px', position: 'relative' }}>
+{/*       <div className='gallery-max' style={{ height: '600px', position: 'relative' }}>
   <CircularGallery bend={-3} textColor="#ffffff" borderRadius={0.05} />
-</div>
+</div> */}
       
       {Object.entries(galleryData).map(([key, section]) => (
         <section key={key} className="gallery-section">

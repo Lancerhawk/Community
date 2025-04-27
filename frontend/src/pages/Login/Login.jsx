@@ -29,6 +29,7 @@ function Login() {
       localStorage.setItem('userId', data.userId);
       localStorage.setItem('username', data.username);
       localStorage.setItem('isVerified', data.veri === 'verified' ? 'true' : 'false');
+      localStorage.setItem('roleAdmin', data.roleAdmin ? 'true' : 'false');
 
       setLoginSuccess(true);
       setTimeout(() => {

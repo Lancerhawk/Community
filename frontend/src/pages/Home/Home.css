@@ -826,6 +826,11 @@
   .members-grid {
     grid-template-columns: 1fr;
   }
+
+  .join-btn{
+    font-size: 1rem!important;
+    padding: 10px 10px!important;
+  }
 }
 
 .join-btn {

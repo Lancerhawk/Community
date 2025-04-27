@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import heading from '../../assets/heading.png';
+import heading from '../../assets/logo.png';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isVerified, setIsVerified] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [username, setUsername] = useState('');
   const navigate = useNavigate();
 
@@ -14,8 +15,10 @@ function Navbar() {
     const token = localStorage.getItem('token');
     const storedUsername = localStorage.getItem('username');
     const verificationStatus = localStorage.getItem('isVerified') === 'true';
+    const adminStatus = localStorage.getItem('roleAdmin') === 'true';
     setIsLoggedIn(!!token);
     setIsVerified(verificationStatus);
+    setIsAdmin(adminStatus);
 
     if (storedUsername) {
       setUsername(storedUsername);
@@ -44,10 +47,10 @@ function Navbar() {
     setIsOpen(false);
   };
 
-  const usertaking = () =>{
+
+  const usertaking = () => {
     navigate('/');
   }
-  
 
   return (
     <div>
@@ -56,7 +59,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="left-section">
-            <img src={heading} alt="" className='logo' draggable="false" onClick={usertaking}/>
+            <img src={heading} alt="" className='logo' draggable="false" style={{ width: '43px' }} onClick={usertaking} />
             {isLoggedIn ? (
               <div className="user-menu-container-navbar">
                 <button className="user-icon-btn">
@@ -144,10 +147,19 @@ function Navbar() {
                       </div>
                     </li>
                   )}
+
+                  {isAdmin && isVerified && (
+                    <li>
+                      <NavLink to="/admin" className={({ isActive }) => (isActive ? 'active' : '')} onClick={closeSidebar}>
+                        Admin
+                      </NavLink>
+                    </li>
+                  )}
+
                 </>
               )}
             </ul>
-            
+
           </div>
 
         </div>

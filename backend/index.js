@@ -6,11 +6,15 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer');
 const UserModel = require('./models/Users');
+const adminRoutes = require('./routes/admin');
 
 const app = express();
 const JWT_SECRET = process.env.JWT_SECRET;
 app.use(cors());
 app.use(express.json());
+
+// Admin routes
+app.use('/api/admin', adminRoutes);
 
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log('Connected to MongoDB Atlas'))
@@ -115,7 +119,8 @@ app.post('/login', async (req, res) => {
             token,
             userId: user._id,
             username: user.username,
-            veri: user.isVerified ? 'verified' : 'unverified'
+            veri: user.isVerified ? 'verified' : 'unverified',
+            roleAdmin: user.roleAdmin? 'admin' : 'user',
         });
     } catch (error) {
         console.error('Login error:', error);

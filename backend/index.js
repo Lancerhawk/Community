@@ -120,7 +120,7 @@ app.post('/login', async (req, res) => {
             userId: user._id,
             username: user.username,
             veri: user.isVerified ? 'verified' : 'unverified',
-            roleAdmin: user.roleAdmin? 'admin' : 'user',
+            roleAdmin: user.roleAdmin? true : false,
         });
     } catch (error) {
         console.error('Login error:', error);

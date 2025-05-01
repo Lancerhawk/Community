@@ -72,8 +72,8 @@ function App() {
             <Route path="/forgot-password" element={<ForgotPassword />} />
             
             {/* Protected Routes */}
-            <Route path="/hackathons" element={<ProtectedRoute><Hackathons /></ProtectedRoute>} />
-            <Route path="/clubs" element={<ProtectedRoute><Clubs /></ProtectedRoute>} />
+            <Route path="/hackathons" element={<Hackathons />} />
+            <Route path="/clubs" element={<Clubs />} />
             <Route path="/startups" element={<ProtectedRoute><Startups /></ProtectedRoute>} />
             <Route path="/courses" element={<ProtectedRoute requireVerification={true}><Courses /></ProtectedRoute>} />
             <Route path="/roadmaps" element={<ProtectedRoute requireVerification={true}><Roadmaps /></ProtectedRoute>} />

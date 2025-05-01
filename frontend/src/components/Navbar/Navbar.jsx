@@ -113,9 +113,7 @@ function Navbar() {
                   About
                 </NavLink>
               </li>
-              {isLoggedIn && (
-                <>
-                  <li>
+              <li>
                     <NavLink to="/hackathons" className={({ isActive }) => (isActive ? 'active' : '')} onClick={closeSidebar}>
                       Hackathons
                     </NavLink>
@@ -125,6 +123,9 @@ function Navbar() {
                       Clubs
                     </NavLink>
                   </li>
+              {isLoggedIn && (
+                <>
+                  
                   <li>
                     <NavLink to="/startups" className={({ isActive }) => (isActive ? 'active' : '')} onClick={closeSidebar}>
                       Startups
@@ -158,6 +159,8 @@ function Navbar() {
 
                 </>
               )}
+
+              
             </ul>
 
           </div>

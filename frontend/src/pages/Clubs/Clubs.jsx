@@ -199,7 +199,7 @@ function Clubs() {
         formUrl = '/DataScienceClub.pdf';
         fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
       }else if (selectedClub.name === 'Trading Club') {
-        formUrl = '/Tradingclub.pdf';
+        formUrl = '/TradingClub.pdf';
         fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
       }
        else {

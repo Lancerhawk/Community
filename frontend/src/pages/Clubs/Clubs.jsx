@@ -103,6 +103,38 @@ const clubsData = [
     ],
     icon: '📊'
   },
+  {
+    id: 4,
+    name: 'Trading Club',
+domain: 'Trading and Finance',
+shortDescription: 'Unlocking financial literacy through hands-on trading and investment education',
+leadership: {
+  leader: 'Parikshit Sharma',
+  manager: 'Ishika Chouksey'
+},
+rules: [
+  'Mandatory participation in weekly doubt-solving sessions',
+  'Regular reviews and optimization discussions',
+  'Structured learning from basics to advanced topics',
+  'Collaborative work and engagement encouraged',
+  'Active involvement in competitions'
+],
+fullDescription: 'The Trading Club is a hub for students passionate about finance, trading, and wealth management. We offer a comprehensive platform for learning about stocks, forex, and commodities through theory, quizzes, and live sessions. Members grow together in a collaborative community dedicated to financial empowerment and problem-solving.',
+activities: [
+  'Live trading sessions',
+  'Basic to advanced trading theory',
+  'Interactive quizzes and discussions',
+  'Forex, stocks, and commodities trading',
+  'Exam-oriented trading modules'
+],
+howToJoin: [
+  'Download the membership form at www.codingera.site/clubs',
+  'Fill out all required details',
+  'Visit C-211 (beside the Incubation Center) during college hours',
+  'Submit the form to the Club Coordinators or Community Secretary'
+]
+ icon: '📈'
+  },
   
 //   {
 //     id: 2,

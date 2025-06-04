@@ -127,12 +127,6 @@ activities: [
   'Forex, stocks, and commodities trading',
   'Exam-oriented trading modules'
 ],
-howToJoin: [
-  'Download the membership form at www.codingera.site/clubs',
-  'Fill out all required details',
-  'Visit C-211 (beside the Incubation Center) during college hours',
-  'Submit the form to the Club Coordinators or Community Secretary'
-]
  icon: '📈'
   },
   

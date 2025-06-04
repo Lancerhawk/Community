@@ -198,6 +198,9 @@ function Clubs() {
       }else if (selectedClub.name === 'Data Science Club') {
         formUrl = '/DataScienceClub.pdf';
         fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
+      }else if (selectedClub.name === 'Trading Club') {
+        formUrl = '/Tradingclub.pdf';
+        fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
       }
        else {
         alert('Form not available yet for this club. Please check back later.');

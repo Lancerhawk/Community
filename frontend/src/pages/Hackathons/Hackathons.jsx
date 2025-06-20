@@ -12,63 +12,10 @@ function Hackathons() {
   
    
 
-    {
-      "id": 1,
-      "status": 'closed',
-      "title": "Ease the Error 5.0",
-      "description": "<p><strong>Ease The Error 5.0</strong> is a 24-Hours Intercollegiate Hackathon conducted in Sri Venkateswara College of Engineering (SVCE), Sriperumbudur.</p><h3>Guidelines</h3><ul><li><strong>Team size:</strong> 4 - 6 members</li><li>Inter-college team members are not allowed (Members of the same college only)</li><li>Inter-specialization team members allowed</li><li>Problem Statements in over 5 Domains (Check our website)</li><li>2 reviews + Final judging</li><li>Software Hackathon</li><li>Registration only through our official website is taken under consideration</li><li>https://ease-the-error-sage.vercel.app</li></ul><h3>Round 1: Abstract Selection</h3><ul><li>Choose a problem statement and create an Abstract</li><li>The abstract template is provided on our website</li></ul><h3>Round 2: 24-Hour Hackathon</h3><ul><li>35 teams are shortlisted</li></ul><h3>Rules</h3><ul><li>Any software development tools, game engine, IDE, and/or programming language can be used for the event. If a team member uses a purchased tool licensed to them and the license is not transferable to other members, the team must choose one available to all developers.</li><li>Lightweight APIs like Google Maps, weather API, and addressing APIs are allowed. Heavyweight APIs are not allowed. In case of exceptions, judges will take the final call.</li><li>A team may not code applications that violate the code of conduct. For example, racially insensitive ideas for an application will automatically be disqualified.</li><li>All project submissions will be randomly code-reviewed. Applications will be spot-checked by code reviewers. All projects selected by the judges as finalists will be code-reviewed to confirm that the code is original work created at the hackathon and that all components and assets conform to the licenses allowed in these rules.</li></ul>",
-      "startDate": "18-03-2025",
-      "endDate": "18-04-2025",
-      "venue": "Sri Venkateswara College of Engineering (SVCE), Chennai, Tamil Nadu",
-      "prize": "₹50,000",
-      "level": "Intermediate",
-      "category": ["track", "open"],
-      "registrationStatus": "closed",
-      "registrationDeadline": "05-04-2025",
-      "teamSize": "4-6 members",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfScUfRx7W7K1W018OcqFowQyEtYs09A7rzPOrQJ1Q5IhEfyQ/viewform?usp=header",
-      "timeline": [
-        { "time": "24 Mar 25, 06:00 PM IST", "event": "Problem Statements & Registration Open" },
-        { "time": "11 Apr 25, 12:00 AM IST", "event": "Submission Deadline" },
-        { "time": "13 Apr 25, 11:00 PM IST", "event": "Shortlist & Waitlist Announcement" },
-        { "time": "18 Apr 25, 10:00 AM IST", "event": "Hackathon Kickoff" },
-        { "time": "18 Apr 25, 04:00 PM IST", "event": "First Round Judging" },
-        { "time": "18 Apr 25, 10:00 PM IST", "event": "Second Round Judging" },
-        { "time": "19 Apr 25, 09:00 AM IST", "event": "Final Round Judging" },
-        { "time": "19 Apr 25, 01:30 PM IST", "event": "Valedictory & Prize Distribution" }
-      ],
-      "requirements": "<h3>Project Domains</h3><ul><li>AI/ML Learning</li><li>Web3 and BlockChain</li><li>Data Analytics & Visualization</li><li>Cybersecurity & Privacy</li><li>Open Innovation Track</li>"
-    },
-    {
-      "id": 2,
-      "status": 'closed',
-      "title": "HACKHAZARDS '25",
-      "description": "<p><strong>HACKHAZARDS '25</strong> is one of India's largest and premier community-run hackathons, making a comeback with more surprises than ever.</p><h3>Why Join HACKHAZARDS?</h3><ul><li><strong>Biggest Prize Pool:</strong> $10,000+ in cash, $250,000+ in credits & vouchers</li><li><strong>Exclusive Tracks:</strong> Monad, Base, Fluvio, Groq & RB Labs – making their India debut at HACKHAZARDS ‘25!</li><li><strong>Beginner-Friendly:</strong> Free workshops & bootcamps for all participants</li><li><strong>No Shortlisting:</strong> Everyone gets to hack!</li><li><strong>210 Hours of Hacking:</strong> Build something amazing</li><li><strong>Global Participation:</strong> Join from anywhere in the world</li><li><strong>Expert Guidance:</strong> 50+ global mentors & judges from top companies</li><li><strong>Exciting Rewards:</strong> Swags & cash prizes for the Top 100 teams</li><li><strong>Career Opportunities:</strong> Internship & incubation opportunities for standout teams</li><li><strong>Certificates:</strong> Provided for all successful project submissions</li></ul>",
-      "startDate": "11-04-2025",
-      "endDate": "20-04-2025",
-      "venue": "Online",
-      "prize": "$8,770",
-      "level": "Beginner",
-      "category": ["track"],
-      "registrationStatus": "closed",
-      "registrationDeadline": "05-04-2025",
-      "teamSize": "1 - 4 members",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfJMwKGe_sHJJiJ4dSHNJD__KITVUC57gSg8MB9UXYCnON40w/viewform?usp=header",
-"timeline": [
-  { "time": "31 Mar 25, 11:59 PM IST", "event": "Registration Deadline" },
-  { "time": "04 Apr 25, 10:00 AM IST", "event": "Problem Statements Announced" },
-  { "time": "11 Apr 25, 12:00 AM IST", "event": "Hackathon Begins" },
-  { "time": "12 Apr 25, 11:59 PM IST", "event": "Problem Statement Selection Deadline" },
-  { "time": "13 Apr 25, 06:00 PM IST", "event": "Mentor Call 1 - Idea Discussion" },
-  { "time": "15 Apr 25, 06:00 PM IST", "event": "Mentor Call 2 - Prototype Discussion" },
-  { "time": "20 Apr 25, 11:59 PM IST", "event": "Final Submission Deadline" },
-  { "time": "27 Apr 25, 05:00 PM IST", "event": "Results Announcement" }
-],
-
-      "requirements": "Open to All"
-    },
+    
+   
         {
-      id: 3,
+      id: 1,
       status: 'closed',
       title: "INNOFUSION 2.O",
       description: "<p>INNOFUSION 2.O! is Kolkata's premier software and hardware hackathon, an open innovation event where students come together to create innovative solutions for real-world problems. Hosted by the University of Engineering and Management, Kolkata, this 30-hour hackathon provides a collaborative space for students to showcase their skills, gain hands-on experience with new technologies, and create projects that have societal impact.</p><h3>About INNOFUSION 2.O!</h3><p>INNOFUSION 2.O! is a hackathon that brings together students from across the country to develop cutting-edge solutions in fields such as AI & ML, Blockchain, Web & App Development, AR & VR, Health Tech, and Open Innovation. This event offers a unique opportunity to work on impactful projects and network with industry experts and peers.</p><h3>Game Zones</h3><ul><li><strong>AI & ML</strong> – Build projects that leverage machine learning and artificial intelligence to solve real-world problems.</li><li><strong>Blockchain & Web3</strong> – Develop decentralized solutions using blockchain and Web3 technologies.</li><li><strong>Web & App Development</strong> – Create innovative web and mobile applications that address contemporary challenges.</li><li><strong>AR & VR</strong> – Develop immersive augmented and virtual reality experiences.</li><li><strong>Health Tech</strong> – Design technological solutions in healthcare that improve lives and wellbeing.</li><li><strong>Open Innovation</strong> – Solve challenges that are not limited to specific domains, encouraging cross-disciplinary solutions.</li></ul><h3>Event Details</h3><ul><li><strong>Idea Submission Deadline</strong>: April 30 (Online)</li><li><strong>Finals Date</strong>: July 26 (Offline Round at University of Engineering and Management, Kolkata)</li><li><strong>Team Size</strong>: 1-4 members</li><li><strong>Registration Fee</strong>: Free</li><li><strong>Eligibility</strong>: Open to intercollege students from anywhere in the world</li></ul><h3>Why Join?</h3><ul><li><strong>Unmatched Rewards & Opportunities</strong></li><li><strong>Cash Prize:</strong> ₹50,000+</li><li><strong>Global Participation:</strong> Join from anywhere in the world</li></ul><h3>How to Participate?</h3><ol><li>Register Now (Free Entry)</li><li>Form a Team (1-4 members)</li><li>Join the Discord Community (for updates & networking)</li><li>Submit Your Ideas Before April 30</li></ol><h3>Competition Rounds</h3><ul><li><strong>Round 1 (Online Idea Submission)</strong>: Teams will submit their innovative ideas before April 30, and the selected teams will advance to the finals.</li><li><strong>Round 2 (Finals - Offline Round)</strong>: Teams that qualify will compete in the offline round at the University of Engineering and Management, Kolkata, on July 26.</li></ul><h3>Prize Pool</h3><p><strong>Total Prize Pool:</strong> ₹50,000+</p>",
@@ -94,54 +41,28 @@ function Hackathons() {
 
       requirements: "Open to All"
     },
-        {
-      "id": 4,
-      "status": 'closed',
-      "title": "BrahmaX 1.0",
-      "description": "<p><strong>BrahmaX 1.0 – The Creation of Tomorrow</strong> is a multi-phase national hackathon hosted at BGIEM, Jabalpur (M.P.), where students across India unite to solve real-world challenges through innovation and technology.</p><h3>Guidelines</h3><ul><li><strong>Team size:</strong> 3 – 4 members</li><li>Open to UG/PG/MBA engineering students from any college</li><li>Team formation assistance provided based on skillset</li><li>Domains include AI & ML, Web & App Dev, FinTech, EdTech, Health Tech, Sustainability, and Open Innovation</li><li>Multi-phase hackathon with idea submission, prototype, and grand finale</li><li>Offline final round at BGIEM Jabalpur</li><li>Registration Fee: ₹400 per team</li></ul><h3>Phase 1: Prarambh (Online Idea Submission)</h3><ul><li>Submit a PPT outlining your idea and approach</li><li>Idea submission open from April 13 – April 25</li></ul><h3>Phase 2: Srishti (Prototype Submission)</h3><ul><li>Teams shortlisted from Phase 1 will submit a 3–5 minute demo video</li><li>Prototype submission window: April 27 – April 29</li></ul><h3>Phase 3: Moksha (Offline Grand Finale)</h3><ul><li>24-hour hackathon held at BGIEM, Jabalpur</li><li>Top teams present final working projects</li><li>Date: May 9 – May 10</li></ul><h3>Rules</h3><ul><li>Any programming language, IDE, or framework can be used</li><li>Open to innovative, original solutions only</li><li>Participants must follow ethical development practices</li><li>Projects will be reviewed for originality, functionality, and relevance to the problem statement</li><li>Mentorship and guidance will be provided throughout the hackathon phases</li></ul>",
-      "startDate": "09-05-2025",
-      "endDate": "10-05-2025",
-      "venue": "Baderia Global Institute of Engineering and Management, Jabalpur, Madhya Pradesh",
-      "prize": "₹30,000",
-      "level": "Beginner",
-      "category": ["open"],
-      "registrationStatus": "closed",
-      "registrationDeadline": "23-04-2025",
-      "teamSize": "3 - 4 members",
-      "registrationLink": "https://forms.gle/BA6td61siA4kYRQAA",
-"timeline": [
-  { "time": "13 Apr 25, 12:00 AM IST", "event": "Phase 1: Prarambh Begins – Idea Submission Starts" },
-  { "time": "23 Apr 25, 11:59 PM IST", "event": "Club Registration Deadline" },
-  { "time": "25 Apr 25, 11:59 PM IST", "event": "Phase 1: Prarambh Ends – Last Day to Submit PPT" },
-  { "time": "27 Apr 25, 12:00 AM IST", "event": "Phase 2: Srishti Begins – Prototype Submission Starts" },
-  { "time": "29 Apr 25, 11:59 PM IST", "event": "Phase 2: Srishti Ends – Prototype Submission Deadline" },
-  { "time": "09 May 25, 12:00 PM IST", "event": "Phase 3: Moksha Begins – 24-Hour Hackathon Starts (Offline)" },
-  { "time": "10 May 25, 12:00 PM IST", "event": "Phase 3: Moksha Ends – Hackathon Concludes" }
-],
-
-      "requirements": "Open to All"
-    },
+       
     {
-  "id": 5,
-  "status": "coming_soon",
-  "title": "HackOrbit 2025",
-  "description": "<p><strong>HackOrbit 2025</strong> is a National-Level Online Hackathon organized by the Digital Learning Group (DLG) in collaboration with Madhav Institute of Technology & Science – Deemed University (MITS-DU), Gwalior.</p><h3>Guidelines</h3><ul><li><strong>Team size:</strong> 2 – 4 members</li><li>Open to participants across India</li><li>Fully online event</li><li>Two rounds: 1st round is free; 2nd round has a fee of ₹100</li><li>Duration: 36 Hours</li><li>Last date to register: 3rd July 2025</li><li>Hackathon dates: 5th – 7th July 2025</li><li>Participation certificates for all registered participants</li><li>Glorious rewards and recognition for top performers</li><li>Networking opportunities with peers and professionals</li></ul><h3>Round 1: Preliminary Screening</h3><ul><li>Free registration</li><li>Initial evaluation based on submitted details</li></ul><h3>Round 2: Main Hackathon</h3><ul><li>Held from 6th July 2025</li><li>36-hour intense coding and innovation challenge</li><li>₹100 fee applicable</li></ul><h3>Rules</h3><ul><li>Participants may use any development tools, frameworks, or programming languages</li><li>Only original work created during the hackathon is allowed</li><li>Use of licensed tools must comply with team-wide accessibility</li><li>Projects violating ethical or community guidelines will be disqualified</li><li>Finalist projects will be subjected to random code reviews</li><li>Judges’ decisions will be final in all matters</li></ul><p><strong>Think. Strategize. Dominate.</strong> This isn’t just a hackathon—it’s a battle of wits where your business acumen and tech prowess will be put to the test. Step up and prove it!</p>",
-  "startDate": "05-07-2025",
-  "endDate": "07-07-2025",
-  "venue": "Madhav Institute of Technology and Science (MITS), Gwalior",
-  "prize": "₹25,000",
-  "level": "Intermediate",
-  "category": ["track", "open"],
-  "registrationStatus": "coming_soon",
-  "registrationDeadline": "01-07-2025",
-  "teamSize": "1-4 members",
-  "registrationLink": "",
+  id: 2,
+  status: 'coming_soon',
+  title: "HackOrbit 2025",
+  description: "<p><strong>HackOrbit 2025</strong> is a National-Level Online Hackathon organized by the Digital Learning Group (DLG) in collaboration with Madhav Institute of Technology & Science – Deemed University (MITS-DU), Gwalior.</p><h3>Guidelines</h3><ul><li><strong>Team size:</strong> 2 – 4 members</li><li>Open to participants across India</li><li>Fully online event</li><li>Two rounds: 1st round is free; 2nd round has a fee of ₹100</li><li>Duration: 36 Hours</li><li>Last date to register: 3rd July 2025</li><li>Hackathon dates: 5th – 7th July 2025</li><li>Participation certificates for all registered participants</li><li>Glorious rewards and recognition for top performers</li><li>Networking opportunities with peers and professionals</li></ul><h3>Round 1: Preliminary Screening</h3><ul><li>Free registration</li><li>Initial evaluation based on submitted details</li></ul><h3>Round 2: Main Hackathon</h3><ul><li>Held from 6th July 2025</li><li>36-hour intense coding and innovation challenge</li><li>₹100 fee applicable</li></ul><h3>Rules</h3><ul><li>Participants may use any development tools, frameworks, or programming languages</li><li>Only original work created during the hackathon is allowed</li><li>Use of licensed tools must comply with team-wide accessibility</li><li>Projects violating ethical or community guidelines will be disqualified</li><li>Finalist projects will be subjected to random code reviews</li><li>Judges’ decisions will be final in all matters</li></ul><p><strong>Think. Strategize. Dominate.</strong> This isn’t just a hackathon—it’s a battle of wits where your business acumen and tech prowess will be put to the test. Step up and prove it!</p>",
+  startDate: "05-07-2025",
+  endDate: "07-07-2025",
+  venue: "Madhav Institute of Technology and Science (MITS), Gwalior",
+  prize: "₹25,000",
+  level: "Intermediate",
+  category: ["track", "open"],
+  registrationStatus: "coming_soon",
+  registrationDeadline: "01-07-2025",
+  teamSize: "1-4 members",
+  registrationLink: "",
   "timeline": [
     { "time": "5 Jul 25, 11:59 PM IST", "event": "Round 1 – PPT Submission Deadline" },
     { "time": "6 Jul 25, 10:00 AM IST", "event": "Round 2 – Final Showdown Begins" },
     { "time": "10 Jul 25, 06:00 PM IST", "event": "Results Announcement & Winner Declaration" }
   ],
-  "requirements": "<h3>Project Domains</h3><ul><li>AI/ML Learning</li><li>Web3 and BlockChain</li><li>Data Analytics & Visualization</li><li>Cybersecurity & Privacy</li><li>Open Innovation Track</li></ul>"
+  requirements: "<h3>Project Domains</h3><ul><li>AI/ML Learning</li><li>Web3 and BlockChain</li><li>Data Analytics & Visualization</li><li>Cybersecurity & Privacy</li><li>Open Innovation Track</li></ul>"
 }
 
   ]);

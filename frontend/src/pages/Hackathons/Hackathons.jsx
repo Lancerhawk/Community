@@ -123,30 +123,28 @@ function Hackathons() {
       "requirements": "Open to All"
     },
     {
-      "id": 5,
-      "status": 'closed',
-      "title": "HackOrbit 2025",
-      "description": "<p><strong>HackOrbit 2025</strong> is a National-Level Online Hackathon organized by the Digital Learning Group (DLG) in collaboration with Madhav Institute of Technology & Science – Deemed University (MITS-DU), Gwalior.</p><h3>Guidelines</h3><ul><li><strong>Team size:</strong> 2 – 4 members</li><li>Open to participants across India</li><li>Fully online event</li><li>Two rounds: 1st round is free; 2nd round has a fee of ₹100</li><li>Duration: 36 Hours</li><li>Last date to register: 3rd July 2025</li><li>Hackathon dates: 5th – 7th July 2025</li><li>Participation certificates for all registered participants</li><li>Glorious rewards and recognition for top performers</li><li>Networking opportunities with peers and professionals</li></ul><h3>Round 1: Preliminary Screening</h3><ul><li>Free registration</li><li>Initial evaluation based on submitted details</li></ul><h3>Round 2: Main Hackathon</h3><ul><li>Held from 6th July 2025</li><li>36-hour intense coding and innovation challenge</li><li>₹100 fee applicable</li></ul><h3>Rules</h3><ul><li>Participants may use any development tools, frameworks, or programming languages</li><li>Only original work created during the hackathon is allowed</li><li>Use of licensed tools must comply with team-wide accessibility</li><li>Projects violating ethical or community guidelines will be disqualified</li><li>Finalist projects will be subjected to random code reviews</li><li>Judges’ decisions will be final in all matters</li></ul><p><strong>Think. Strategize. Dominate.</strong> This isn’t just a hackathon—it’s a battle of wits where your business acumen and tech prowess will be put to the test. Step up and prove it!</p>
-",
-      "startDate": "05-07-2025",
-      "endDate": "07-07-2025",
-      "venue": "Madhav Insitute of Technology and Science (MITS), Gwalior",
-      "prize": "₹25,000",
-      "level": "Intermediate",
-      "category": ["track", "open"],
-      "registrationStatus": "closed",
-      "registrationDeadline": "01-07-2025",
-      "teamSize": "1-4 members",
-      "registrationLink": "",
-      "timeline": [
-  { "time": "5 Jul 25, 11:59 PM IST", "event": "Round 1 – PPT Submission Deadline" },
-  { "time": "6 Jul 25, 10:00 AM IST", "event": "Round 2 – Final Showdown Begins" },
-  { "time": "10 Jul 25, 06:00 PM IST", "event": "Results Announcement & Winner Declaration" }
-],
+  "id": 5,
+  "status": "closed",
+  "title": "HackOrbit 2025",
+  "description": "<p><strong>HackOrbit 2025</strong> is a National-Level Online Hackathon organized by the Digital Learning Group (DLG) in collaboration with Madhav Institute of Technology & Science – Deemed University (MITS-DU), Gwalior.</p><h3>Guidelines</h3><ul><li><strong>Team size:</strong> 2 – 4 members</li><li>Open to participants across India</li><li>Fully online event</li><li>Two rounds: 1st round is free; 2nd round has a fee of ₹100</li><li>Duration: 36 Hours</li><li>Last date to register: 3rd July 2025</li><li>Hackathon dates: 5th – 7th July 2025</li><li>Participation certificates for all registered participants</li><li>Glorious rewards and recognition for top performers</li><li>Networking opportunities with peers and professionals</li></ul><h3>Round 1: Preliminary Screening</h3><ul><li>Free registration</li><li>Initial evaluation based on submitted details</li></ul><h3>Round 2: Main Hackathon</h3><ul><li>Held from 6th July 2025</li><li>36-hour intense coding and innovation challenge</li><li>₹100 fee applicable</li></ul><h3>Rules</h3><ul><li>Participants may use any development tools, frameworks, or programming languages</li><li>Only original work created during the hackathon is allowed</li><li>Use of licensed tools must comply with team-wide accessibility</li><li>Projects violating ethical or community guidelines will be disqualified</li><li>Finalist projects will be subjected to random code reviews</li><li>Judges’ decisions will be final in all matters</li></ul><p><strong>Think. Strategize. Dominate.</strong> This isn’t just a hackathon—it’s a battle of wits where your business acumen and tech prowess will be put to the test. Step up and prove it!</p>",
+  "startDate": "05-07-2025",
+  "endDate": "07-07-2025",
+  "venue": "Madhav Institute of Technology and Science (MITS), Gwalior",
+  "prize": "₹25,000",
+  "level": "Intermediate",
+  "category": ["track", "open"],
+  "registrationStatus": "closed",
+  "registrationDeadline": "01-07-2025",
+  "teamSize": "1-4 members",
+  "registrationLink": "",
+  "timeline": [
+    { "time": "5 Jul 25, 11:59 PM IST", "event": "Round 1 – PPT Submission Deadline" },
+    { "time": "6 Jul 25, 10:00 AM IST", "event": "Round 2 – Final Showdown Begins" },
+    { "time": "10 Jul 25, 06:00 PM IST", "event": "Results Announcement & Winner Declaration" }
+  ],
+  "requirements": "<h3>Project Domains</h3><ul><li>AI/ML Learning</li><li>Web3 and BlockChain</li><li>Data Analytics & Visualization</li><li>Cybersecurity & Privacy</li><li>Open Innovation Track</li></ul>"
+}
 
-      "requirements": "<h3>Project Domains</h3><ul><li>AI/ML Learning</li><li>Web3 and BlockChain</li><li>Data Analytics & Visualization</li><li>Cybersecurity & Privacy</li><li>Open Innovation Track</li></ul>
-"
-    },
   ])
 
   const filters = [

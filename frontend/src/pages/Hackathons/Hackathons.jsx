@@ -117,8 +117,7 @@ function Hackathons() {
   { "time": "29 Apr 25, 11:59 PM IST", "event": "Phase 2: Srishti Ends – Prototype Submission Deadline" },
   { "time": "09 May 25, 12:00 PM IST", "event": "Phase 3: Moksha Begins – 24-Hour Hackathon Starts (Offline)" },
   { "time": "10 May 25, 12:00 PM IST", "event": "Phase 3: Moksha Ends – Hackathon Concludes" }
-]
-,
+],
 
       "requirements": "Open to All"
     },
@@ -145,7 +144,7 @@ function Hackathons() {
   "requirements": "<h3>Project Domains</h3><ul><li>AI/ML Learning</li><li>Web3 and BlockChain</li><li>Data Analytics & Visualization</li><li>Cybersecurity & Privacy</li><li>Open Innovation Track</li></ul>"
 }
 
-  ])
+  ]);
 
   const filters = [
     { id: 'all', label: '🌟 All', color: '#6C63FF' },

@@ -56,7 +56,7 @@ function Hackathons() {
   registrationStatus: "open",
   registrationDeadline: "27-06-2025",
   teamSize: "1-4 members",
-  registrationLink: "",
+  registrationLink: "https://forms.gle/xZtH8qivCJK2B6rFA",
   "timeline": [
     { "time": "5 Jul 25, 11:59 PM IST", "event": "Round 1 – PPT Submission Deadline" },
     { "time": "6 Jul 25, 10:00 AM IST", "event": "Round 2 – Final Showdown Begins" },

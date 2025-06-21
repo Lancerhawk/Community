@@ -44,7 +44,7 @@ function Hackathons() {
        
     {
   id: 2,
-  status: 'coming_soon',
+  status: 'open',
   title: "HackOrbit 2025",
   description: "<p><strong>HackOrbit 2025</strong> is a National-Level Online Hackathon organized by the Digital Learning Group (DLG) in collaboration with Madhav Institute of Technology & Science – Deemed University (MITS-DU), Gwalior.</p><h3>Guidelines</h3><ul><li><strong>Team size:</strong> 2 – 4 members</li><li>Open to participants across India</li><li>Fully online event</li><li>Two rounds: 1st round is free; 2nd round has a fee of ₹100</li><li>Duration: 36 Hours</li><li>Last date to register: 3rd July 2025</li><li>Hackathon dates: 5th – 7th July 2025</li><li>Participation certificates for all registered participants</li><li>Glorious rewards and recognition for top performers</li><li>Networking opportunities with peers and professionals</li></ul><h3>Round 1: Preliminary Screening</h3><ul><li>Free registration</li><li>Initial evaluation based on submitted details</li></ul><h3>Round 2: Main Hackathon</h3><ul><li>Held from 6th July 2025</li><li>36-hour intense coding and innovation challenge</li><li>₹100 fee applicable</li></ul><h3>Rules</h3><ul><li>Participants may use any development tools, frameworks, or programming languages</li><li>Only original work created during the hackathon is allowed</li><li>Use of licensed tools must comply with team-wide accessibility</li><li>Projects violating ethical or community guidelines will be disqualified</li><li>Finalist projects will be subjected to random code reviews</li><li>Judges’ decisions will be final in all matters</li></ul><p><strong>Think. Strategize. Dominate.</strong> This isn’t just a hackathon—it’s a battle of wits where your business acumen and tech prowess will be put to the test. Step up and prove it!</p>",
   startDate: "05-07-2025",
@@ -53,8 +53,8 @@ function Hackathons() {
   prize: "₹25,000",
   level: "Intermediate",
   category: ["track", "open"],
-  registrationStatus: "coming_soon",
-  registrationDeadline: "01-07-2025",
+  registrationStatus: "open",
+  registrationDeadline: "27-06-2025",
   teamSize: "1-4 members",
   registrationLink: "",
   "timeline": [

@@ -63,7 +63,7 @@ function Hackathons() {
     { "time": "10 Jul 25, 06:00 PM IST", "event": "Results Announcement & Winner Declaration" }
   ],
   requirements: "<h3>Project Domains</h3><ul><li>AI/ML Learning</li><li>Web3 and BlockChain</li><li>Data Analytics & Visualization</li><li>Cybersecurity & Privacy</li><li>Open Innovation Track</li></ul>"
-}
+},
     {
       id: 3,
       status: 'open',

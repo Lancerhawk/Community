@@ -12,10 +12,34 @@ function Hackathons() {
   
    
 
-    
+    {
+      id: 1,
+      status: 'open',
+      title: "MetaMorph 2025",
+      description: "<p>MetaMorph is a 36-hour cosmic coding adventure where innovators come together to build groundbreaking projects. Hosted by Guru Nanak Institute of Technology, Kolkata, this hackathon offers a collaborative environment for participants to showcase their skills, gain hands-on experience with new technologies, and create impactful solutions.</p><h3>About MetaMorph</h3><p>MetaMorph brings together participants from across the country to develop futuristic solutions in fields such as AI & ML, Web Technologies, Blockchain Revolution, and more. This event provides access to cutting-edge resources, mentorship from industry experts, and opportunities to network with peers.</p><h3>Game Zones</h3><ul><li><strong>AI & ML</strong> – Build intelligent systems that solve real-world problems using machine learning and artificial intelligence.</li><li><strong>Web Technologies</strong> – Create innovative web solutions that address modern challenges.</li><li><strong>Blockchain Revolution</strong> – Develop decentralized applications and blockchain-powered solutions.</li><li><strong>Open Innovation</strong> – Work on creative ideas beyond domain boundaries.</li></ul><h3>Event Details</h3><ul><li><strong>Idea Submission Deadline</strong>: TBA</li><li><strong>Finals Date</strong>: September 6-7, 2025 (Offline Round at Guru Nanak Institute of Technology, Kolkata)</li><li><strong>Team Size</strong>: 1-4 members</li><li><strong>Registration Fee</strong>: Free</li><li><strong>Eligibility</strong>: Open to students from anywhere in the world</li></ul><h3>Why Join?</h3><ul><li><strong>Innovation & Learning</strong></li><li><strong>Cash Prizes</strong> across multiple categories</li><li><strong>Global Participation</strong>: Join from anywhere</li></ul><h3>How to Participate?</h3><ol><li>Register Now (Free Entry)</li><li>Form a Team (1-4 members)</li><li>Submit Your Ideas</li><li>Join the Hackathon on September 6-7, 2025</li></ol><h3>Competition Rounds</h3><ul><li><strong>Round 1 (Idea Submission)</strong>: Teams submit ideas and receive feedback from mentors.</li><li><strong>Round 2 (Hackathon Weekend)</strong>: 36 hours of coding, workshops, mentorship, and project building at GNIT, Kolkata.</li><li><strong>Round 3 (Presentations)</strong>: Teams present projects to judges and participants.</li></ul><h3>Prize Pool</h3><p><strong>Total Prize Pool:</strong> $1100</p>",
+      startDate: "06-09-2025",
+      endDate: "07-09-2025",
+      venue: "GNIT, Nilgunj Road, Panihati, Kolkata",
+      prize: "$1100",
+      level: "Intermediate",
+      category: "open",
+      registrationStatus: "open",
+      registrationDeadline: "18-07-2025",
+      teamSize: "1-4 members",
+      registrationLink: "https://forms.gle/by88nyPQrfR5NfMDA",
+ "timeline": [
+  { "time": "15 Jul 25, 12:00 AM IST", "event": "Registrations begin" },
+  { "time": "20 Aug 25, 11:59 PM IST", "event": "Registrations end" },
+  { "time": "06 Sep 25, 08:00 AM IST", "event": "Hackathon starts" },
+  { "time": "07 Sep 25, 03:00 AM IST", "event": "Hackathon ends" }
+],
+
+
+      requirements: "Open to All"
+    },
    
         {
-      id: 3,
+      id: 2,
       status: 'closed',
       title: "INNOFUSION 2.O",
       description: "<p>INNOFUSION 2.O! is Kolkata's premier software and hardware hackathon, an open innovation event where students come together to create innovative solutions for real-world problems. Hosted by the University of Engineering and Management, Kolkata, this 30-hour hackathon provides a collaborative space for students to showcase their skills, gain hands-on experience with new technologies, and create projects that have societal impact.</p><h3>About INNOFUSION 2.O!</h3><p>INNOFUSION 2.O! is a hackathon that brings together students from across the country to develop cutting-edge solutions in fields such as AI & ML, Blockchain, Web & App Development, AR & VR, Health Tech, and Open Innovation. This event offers a unique opportunity to work on impactful projects and network with industry experts and peers.</p><h3>Game Zones</h3><ul><li><strong>AI & ML</strong> – Build projects that leverage machine learning and artificial intelligence to solve real-world problems.</li><li><strong>Blockchain & Web3</strong> – Develop decentralized solutions using blockchain and Web3 technologies.</li><li><strong>Web & App Development</strong> – Create innovative web and mobile applications that address contemporary challenges.</li><li><strong>AR & VR</strong> – Develop immersive augmented and virtual reality experiences.</li><li><strong>Health Tech</strong> – Design technological solutions in healthcare that improve lives and wellbeing.</li><li><strong>Open Innovation</strong> – Solve challenges that are not limited to specific domains, encouraging cross-disciplinary solutions.</li></ul><h3>Event Details</h3><ul><li><strong>Idea Submission Deadline</strong>: April 30 (Online)</li><li><strong>Finals Date</strong>: July 26 (Offline Round at University of Engineering and Management, Kolkata)</li><li><strong>Team Size</strong>: 1-4 members</li><li><strong>Registration Fee</strong>: Free</li><li><strong>Eligibility</strong>: Open to intercollege students from anywhere in the world</li></ul><h3>Why Join?</h3><ul><li><strong>Unmatched Rewards & Opportunities</strong></li><li><strong>Cash Prize:</strong> ₹50,000+</li><li><strong>Global Participation:</strong> Join from anywhere in the world</li></ul><h3>How to Participate?</h3><ol><li>Register Now (Free Entry)</li><li>Form a Team (1-4 members)</li><li>Join the Discord Community (for updates & networking)</li><li>Submit Your Ideas Before April 30</li></ol><h3>Competition Rounds</h3><ul><li><strong>Round 1 (Online Idea Submission)</strong>: Teams will submit their innovative ideas before April 30, and the selected teams will advance to the finals.</li><li><strong>Round 2 (Finals - Offline Round)</strong>: Teams that qualify will compete in the offline round at the University of Engineering and Management, Kolkata, on July 26.</li></ul><h3>Prize Pool</h3><p><strong>Total Prize Pool:</strong> ₹50,000+</p>",
@@ -43,7 +67,7 @@ function Hackathons() {
     },
        
     {
-  id: 2,
+  id: 3,
   status: 'closed',
   title: "HackOrbit 2025",
   description: "<p><strong>HackOrbit 2025</strong> is a National-Level Online Hackathon organized by the Digital Learning Group (DLG) in collaboration with Madhav Institute of Technology & Science – Deemed University (MITS-DU), Gwalior.</p><h3>Guidelines</h3><ul><li><strong>Team size:</strong> 2 – 4 members</li><li>Open to participants across India</li><li>Fully online event</li><li>Two rounds: 1st round is free; 2nd round has a fee of ₹100</li><li>Duration: 36 Hours</li><li>Last date to register: 3rd July 2025</li><li>Hackathon dates: 5th – 7th July 2025</li><li>Participation certificates for all registered participants</li><li>Glorious rewards and recognition for top performers</li><li>Networking opportunities with peers and professionals</li></ul><h3>Round 1: Preliminary Screening</h3><ul><li>Free registration</li><li>Initial evaluation based on submitted details</li></ul><h3>Round 2: Main Hackathon</h3><ul><li>Held from 6th July 2025</li><li>36-hour intense coding and innovation challenge</li><li>₹100 fee applicable</li></ul><h3>Rules</h3><ul><li>Participants may use any development tools, frameworks, or programming languages</li><li>Only original work created during the hackathon is allowed</li><li>Use of licensed tools must comply with team-wide accessibility</li><li>Projects violating ethical or community guidelines will be disqualified</li><li>Finalist projects will be subjected to random code reviews</li><li>Judges’ decisions will be final in all matters</li></ul><p><strong>Think. Strategize. Dominate.</strong> This isn’t just a hackathon—it’s a battle of wits where your business acumen and tech prowess will be put to the test. Step up and prove it!</p>",
@@ -64,31 +88,6 @@ function Hackathons() {
   ],
   requirements: "<h3>Project Domains</h3><ul><li>AI/ML Learning</li><li>Web3 and BlockChain</li><li>Data Analytics & Visualization</li><li>Cybersecurity & Privacy</li><li>Open Innovation Track</li></ul>"
 },
-    {
-      id: 1,
-      status: 'open',
-      title: "MetaMorph 2025",
-      description: "<p>MetaMorph is a 36-hour cosmic coding adventure where innovators come together to build groundbreaking projects. Hosted by Guru Nanak Institute of Technology, Kolkata, this hackathon offers a collaborative environment for participants to showcase their skills, gain hands-on experience with new technologies, and create impactful solutions.</p><h3>About MetaMorph</h3><p>MetaMorph brings together participants from across the country to develop futuristic solutions in fields such as AI & ML, Web Technologies, Blockchain Revolution, and more. This event provides access to cutting-edge resources, mentorship from industry experts, and opportunities to network with peers.</p><h3>Game Zones</h3><ul><li><strong>AI & ML</strong> – Build intelligent systems that solve real-world problems using machine learning and artificial intelligence.</li><li><strong>Web Technologies</strong> – Create innovative web solutions that address modern challenges.</li><li><strong>Blockchain Revolution</strong> – Develop decentralized applications and blockchain-powered solutions.</li><li><strong>Open Innovation</strong> – Work on creative ideas beyond domain boundaries.</li></ul><h3>Event Details</h3><ul><li><strong>Idea Submission Deadline</strong>: TBA</li><li><strong>Finals Date</strong>: September 6-7, 2025 (Offline Round at Guru Nanak Institute of Technology, Kolkata)</li><li><strong>Team Size</strong>: 1-4 members</li><li><strong>Registration Fee</strong>: Free</li><li><strong>Eligibility</strong>: Open to students from anywhere in the world</li></ul><h3>Why Join?</h3><ul><li><strong>Innovation & Learning</strong></li><li><strong>Cash Prizes</strong> across multiple categories</li><li><strong>Global Participation</strong>: Join from anywhere</li></ul><h3>How to Participate?</h3><ol><li>Register Now (Free Entry)</li><li>Form a Team (1-4 members)</li><li>Submit Your Ideas</li><li>Join the Hackathon on September 6-7, 2025</li></ol><h3>Competition Rounds</h3><ul><li><strong>Round 1 (Idea Submission)</strong>: Teams submit ideas and receive feedback from mentors.</li><li><strong>Round 2 (Hackathon Weekend)</strong>: 36 hours of coding, workshops, mentorship, and project building at GNIT, Kolkata.</li><li><strong>Round 3 (Presentations)</strong>: Teams present projects to judges and participants.</li></ul><h3>Prize Pool</h3><p><strong>Total Prize Pool:</strong> $1100</p>",
-      startDate: "06-09-2025",
-      endDate: "07-09-2025",
-      venue: "GNIT, Nilgunj Road, Panihati, Kolkata",
-      prize: "$1100",
-      level: "Intermediate",
-      category: "open",
-      registrationStatus: "open",
-      registrationDeadline: "18-07-2025",
-      teamSize: "1-4 members",
-      registrationLink: "https://forms.gle/by88nyPQrfR5NfMDA",
- "timeline": [
-  { "time": "15 Jul 25, 12:00 AM IST", "event": "Registrations begin" },
-  { "time": "20 Aug 25, 11:59 PM IST", "event": "Registrations end" },
-  { "time": "06 Sep 25, 08:00 AM IST", "event": "Hackathon starts" },
-  { "time": "07 Sep 25, 03:00 AM IST", "event": "Hackathon ends" }
-],
-
-
-      requirements: "Open to All"
-    },
 
   ]);
 

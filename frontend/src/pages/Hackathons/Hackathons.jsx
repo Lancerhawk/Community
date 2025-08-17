@@ -37,6 +37,7 @@ function Hackathons() {
 
       requirements: "Open to All"
     },
+    
    {
       id: 2,
       status: 'open',
@@ -66,11 +67,9 @@ function Hackathons() {
   { "time": "11 Sept 25", "event": "Finale – JEC, Jabalpur" },
   { "time": "17 Sept 25", "event": "Winners’ presentation at CIIS 2025, Bhopal" }
 ],
-
-
-
       requirements: "Open to All"
     },
+    
         {
       id: 3,
       status: 'closed',

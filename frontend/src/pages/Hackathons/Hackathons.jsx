@@ -45,8 +45,6 @@ function Hackathons() {
       description: "<p>CyberShield Hackathon 2025 is a real-world challenge where innovators come together to tackle cybercrime and build impactful solutions. This hackathon provides a collaborative environment for students to showcase their skills, gain hands-on experience, and contribute to digital security.</p><h3>About CyberShield Hackathon</h3><p>CyberShield brings together UG and PG engineering students to develop innovative solutions in fields such as cybercrime, digital investigation, and law enforcement support. This event offers mentorship, exposure, and the opportunity to present projects at CIIS 2025.</p><h3>Game Zones</h3><ul><li><strong>Cybercrime</strong> – Design tools and systems to prevent and detect cyber threats.</li><li><strong>Digital Investigation</strong> – Build solutions for forensics, evidence gathering, and analysis.</li><li><strong>Law Enforcement Solutions</strong> – Create technologies that empower agencies in combating cybercrime.</li></ul><h3>Event Details</h3><ul><li><strong>Registration Deadline</strong>: August 18, 2025</li><li><strong>Final Round Dates</strong>: September 9-11, 2025</li><li><strong>Final Round Venues</strong>: SGSITS Indore (Sept 9), MANIT Bhopal (Sept 10), JEC Jabalpur (Sept 11)</li><li><strong>Team Size</strong>: 3-5 members (at least one female participant required)</li><li><strong>Registration Fee</strong>: Free</li><li><strong>Eligibility</strong>: Open to all UG/PG Engineering Students</li></ul><h3>Why Join?</h3><ul><li><strong>Innovation & Impact</strong></li><li><strong>Cash Prizes</strong> for top teams</li><li><strong>Showcase Opportunity</strong> at CIIS 2025</li><li><strong>Pre-Placement Offers</strong> from ClearTrail Technologies</li></ul><h3>How to Participate?</h3><ol><li>Register before August 18, 2025</li><li>Form a Team (3-5 members with at least one female participant)</li><li>Submit your Application</li><li>Join the Final Round on September 9-11, 2025</li></ol><h3>Competition Rounds</h3><ul><li><strong>Team Formation</strong>: Teams formed based on skills or self-formed (no changes once finalized).</li><li><strong>Final Round (Offline Presentations)</strong>: Teams present solutions at SGSITS Indore, MANIT Bhopal, or JEC Jabalpur.</li></ul><h3>Prize Pool</h3><p><strong>Rewards:</strong> Substantial Cash Prizes, Showcase at CIIS 2025, and Pre-Placement Offers from ClearTrail Technologies.</p>",
       startDate: "09-09-2025",
       endDate: "11-09-2025",
-      venue: "SGSITS, Indore",
-     venue: "MANIT, Bhopal",
      venue: "JEC, Jabalpur",
       prize: "Substantial Cash Prizes, Showcase Opportunity at CIIS 2025 & Pre-Placement Offers from ClearTrail Technologies.
 ",
@@ -67,6 +65,7 @@ function Hackathons() {
   { "time": "11 Sept 25", "event": "Finale – JEC, Jabalpur" },
   { "time": "17 Sept 25", "event": "Winners’ presentation at CIIS 2025, Bhopal" }
 ],
+     
       requirements: "Open to All"
     },
     

@@ -46,8 +46,7 @@ function Hackathons() {
       startDate: "09-09-2025",
       endDate: "11-09-2025",
      venue: "JEC, Jabalpur",
-      prize: "Substantial Cash Prizes, Showcase Opportunity at CIIS 2025 & Pre-Placement Offers from ClearTrail Technologies.
-",
+      prize: "Substantial Cash Prizes, Showcase Opportunity at CIIS 2025 & Pre-Placement Offers from ClearTrail Technologies.",
       level: "Intermediate",
       category: "open",
       registrationStatus: "open",

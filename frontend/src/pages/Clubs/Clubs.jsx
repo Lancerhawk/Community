@@ -259,8 +259,8 @@ function Clubs() {
             <h2>{selectedClub.name}</h2>
           <div className="club-leadership">
             <h3>Club Leadership</h3>
-            <p><strong>Club Leader:</strong> {selectedClub.leadership.leader}</p>
-            <p><strong>Club Manager:</strong> {selectedClub.leadership.manager}</p>
+            <p><strong>Club Leader:</strong> {selectedClub.leadership.leader.name}({selectedClub.leadership.leader.contact})</p>
+            <p><strong>Club Manager:</strong> {selectedClub.leadership.manager.name}({selectedClub.leadership.manager.contact})</p>
           </div>
           <p className="modal-description">{selectedClub.fullDescription}</p>
           <h3>Club Rules</h3>
@@ -369,4 +369,5 @@ function Clubs() {
 }
 
 export default Clubs;
+
 

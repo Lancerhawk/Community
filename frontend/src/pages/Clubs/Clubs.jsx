@@ -32,8 +32,12 @@ const clubsData = [
     domain: 'Web Development',
     shortDescription: 'Crafting modern web experiences and solutions',
     leadership: {
-      leader: 'Arin Jain',
-      manager: 'Arpit Shukla'
+      leader: {name: "Arin Jain",
+               contact: "9301459291"
+              },
+      manager: {name: "Arpit Shukla",
+                contact: "9755489508"
+               }
     },
     rules: [
       'Weekly offline sessions mandatory for all members',
@@ -365,3 +369,4 @@ function Clubs() {
 }
 
 export default Clubs;
+

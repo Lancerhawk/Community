@@ -327,7 +327,7 @@ function Clubs() {
               <ol className="process-list">
                 <li>Download and fill the registration form</li>
                 <li>Gather required info about your management Teams</li>
-                <li>Submit proposal and documentation to the secretary. For any queries please contact :<br>
+                <li>Submit proposal and documentation to the secretary. For any queries please contact :
                 ~ kartik jain (7440473074)
                 ~ jaya karwani (7389361388)</li>
                 {/* <li>Presen</li> */}
@@ -369,6 +369,7 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 
 

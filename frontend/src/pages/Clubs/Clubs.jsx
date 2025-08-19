@@ -32,9 +32,9 @@ const clubsData = [
     domain: 'Web Development',
     shortDescription: 'Crafting modern web experiences and solutions',
     leadership: {
-      leader: 'Arin Jain(9301459291)',
+      leader: 'Arin Jain (9301459291)',
    //   contact: '9301459291',
-      manager:'Arpit Shukla(9755489508)',
+      manager:'Arpit Shukla (9755489508)',
      // contact: '9755489508'
     },
     rules: [
@@ -59,8 +59,8 @@ const clubsData = [
     domain: 'Data Structures and Algorithms',
     shortDescription: 'Solving complex problems through efficient algorithms',
     leadership: {
-      leader: 'Ayushman Gupta',
-      manager: 'Veerendra Soni'
+      leader: 'Ayushman Gupta (9131674063)',
+      manager: 'Veerendra Soni (7489339369)'
     },
     rules: [
       'Mandatory participation in weekly problem-solving sessions',
@@ -111,8 +111,8 @@ const clubsData = [
 domain: 'Trading and Finance',
 shortDescription: 'Unlocking financial literacy through hands-on trading and investment education',
 leadership: {
-  leader: 'Parikshit Sharma',
-  manager: 'Ishika Chouksey'
+  leader: 'Parikshit Sharma (8817763021)',
+  manager: 'Ishika Chouksey (7000095614)'
 },
 rules: [
   'Mandatory participation in weekly doubt-solving sessions',
@@ -367,6 +367,7 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 
 

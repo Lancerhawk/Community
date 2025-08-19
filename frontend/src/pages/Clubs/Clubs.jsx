@@ -32,12 +32,8 @@ const clubsData = [
     domain: 'Web Development',
     shortDescription: 'Crafting modern web experiences and solutions',
     leadership: {
-      leader: {name: "Arin Jain",
-               contact: "9301459291"
-              },
-      manager: {name: "Arpit Shukla",
-                contact: "9755489508"
-               }
+      leader: "Arin Jain",
+      manager:"Arpit Shukla"
     },
     rules: [
       'Weekly offline sessions mandatory for all members',
@@ -259,8 +255,8 @@ function Clubs() {
             <h2>{selectedClub.name}</h2>
           <div className="club-leadership">
             <h3>Club Leadership</h3>
-            <p><strong>Club Leader:</strong> {selectedClub.leadership.leader.name}({selectedClub.leadership.leader.contact})</p>
-            <p><strong>Club Manager:</strong> {selectedClub.leadership.manager.name}({selectedClub.leadership.manager.contact})</p>
+            <p><strong>Club Leader:</strong> {selectedClub.leadership.leader}</p>
+            <p><strong>Club Manager:</strong> {selectedClub.leadership.manager}</p>
           </div>
           <p className="modal-description">{selectedClub.fullDescription}</p>
           <h3>Club Rules</h3>
@@ -369,5 +365,6 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 

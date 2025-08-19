@@ -327,7 +327,9 @@ function Clubs() {
               <ol className="process-list">
                 <li>Download and fill the registration form</li>
                 <li>Gather required info about your management Teams</li>
-                <li>Submit proposal and documentation to the C-211 beside Incubation Center at any Working Day</li>
+                <li>Submit proposal and documentation to the club leader. For any queries please contact :
+                ~ web developmwnt club leader: Arin Jain (9301459291)
+                ~ web development club manager: Arpit shukla (9755489508)</li>
                 {/* <li>Presen</li> */}
                 <li>Await approval notification</li>
               </ol>
@@ -367,6 +369,7 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 
 

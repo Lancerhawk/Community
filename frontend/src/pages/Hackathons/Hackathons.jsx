@@ -9,11 +9,34 @@ function Hackathons() {
 
   const [hackathons] = useState([
   
-  
+   {
+      id: 1,
+      status: 'open',
+      title: "Smart India Hackathon 2025",
+      description: "<p>Smart India Hackathon (SIH) is a premier nationwide initiative designed to engage students in solving some of the most pressing challenges faced in everyday life. It provides a dynamic platform for students to develop and showcase their creative solutions to real-world problems, fostering innovation and bridging the gap between academic knowledge and practical application.</p><h3>About SIH</h3><p>Since its inception, SIH has promoted out-of-the-box thinking among young minds and encourages collaboration with industry experts, government agencies, and other stakeholders.</p><h3>Game Zones</h3><ul><li><strong>Innovative Solutions</strong> – Cost-effective and creative solutions for real-world problems.</li><li><strong>Recognition & Visibility</strong> – National recognition across premier institutions.</li><li><strong>Out-of-the-box Solutions</strong> – Unique approaches from talented students.</li><li><strong>Innovation Movement</strong> – Be part of the world’s biggest open innovation platform.</li></ul><h3>Event Details</h3><ul><li><strong>Idea Submission Deadline</strong>: TBA</li><li><strong>Finals Date</strong>: TBA</li><li><strong>Team Size</strong>: TBA</li><li><strong>Registration Fee</strong>: Free</li><li><strong>Eligibility</strong>: Open to students from across India</li></ul><h3>Why Join?</h3><ul><li><strong>Innovative Solutions</strong> – Get innovative solutions to your problems in cost effective ways.</li><li><strong>Recognition and visibility</strong> – National recognition and visibility across premier institutions in India.</li><li><strong>Out-of-the-box solutions</strong> – Talented youngsters offer out-of-the-box solutions to your problems.</li><li><strong>Innovation Movement Opportunity</strong> – Be part of the world’s biggest open innovation movement.</li></ul><h3>How to Participate?</h3><ol><li>SPOC registration is now open for Colleges.</li><li>Know Your SPOC.</li><li>Submit Your Ideas.</li><li>Join the Hackathon Finals.</li></ol><h3>Competition Rounds</h3><ul><li><strong>Round 1 (Idea Submission)</strong>: Teams submit ideas via SPOC for evaluation.</li><li><strong>Round 2 (Hackathon)</strong>: Coding, mentorship, and project building.</li><li><strong>Round 3 (Presentations)</strong>: Teams present projects to judges and stakeholders.</li></ul><h3>Prize Pool</h3><p><strong>Total Prize Pool:</strong> ₹2,25,000 (1st Prize: ₹1,00,000 | 2nd Prize: ₹75,000 | 3rd Prize: ₹50,000)</p>",
+     
+      startDate: "25-08-2025",
+      endDate: "01-12-2025",
+      venue: "Multiple Nodal Centers across India (TBA)",
+      prize: "Rs. 2.25lakh ",
+      level: "Intermediate",
+      category: "open",
+      registrationStatus: "open",
+      registrationDeadline: "30-09-2025",
+      teamSize: "1-6 members",
+      registrationLink: "https://forms.gle/vb5fuBiA5deTAwsX7",
+     
+"timeline":[
+  { "time":"25 Aug 2025","event":"SPOC & Team Registration begins" },
+  { "time":"30 Sep 2025","event":"SPOC & Team Registration ends" },
+  { "time":"DEC 2025 (TBA)","event":"Hackathon finals (grand finale)" }
+],
+      requirements: "Open to All"
+    },
    
 
     {
-      id: 1,
+      id: 2,
       status: 'open',
       title: "MetaMorph 2025",
       description: "<p>MetaMorph is a 36-hour cosmic coding adventure where innovators come together to build groundbreaking projects. Hosted by Guru Nanak Institute of Technology, Kolkata, this hackathon offers a collaborative environment for participants to showcase their skills, gain hands-on experience with new technologies, and create impactful solutions.</p><h3>About MetaMorph</h3><p>MetaMorph brings together participants from across the country to develop futuristic solutions in fields such as AI & ML, Web Technologies, Blockchain Revolution, and more. This event provides access to cutting-edge resources, mentorship from industry experts, and opportunities to network with peers.</p><h3>Game Zones</h3><ul><li><strong>AI & ML</strong> – Build intelligent systems that solve real-world problems using machine learning and artificial intelligence.</li><li><strong>Web Technologies</strong> – Create innovative web solutions that address modern challenges.</li><li><strong>Blockchain Revolution</strong> – Develop decentralized applications and blockchain-powered solutions.</li><li><strong>Open Innovation</strong> – Work on creative ideas beyond domain boundaries.</li></ul><h3>Event Details</h3><ul><li><strong>Idea Submission Deadline</strong>: TBA</li><li><strong>Finals Date</strong>: September 6-7, 2025 (Offline Round at Guru Nanak Institute of Technology, Kolkata)</li><li><strong>Team Size</strong>: 1-4 members</li><li><strong>Registration Fee</strong>: Free</li><li><strong>Eligibility</strong>: Open to students from anywhere in the world</li></ul><h3>Why Join?</h3><ul><li><strong>Innovation & Learning</strong></li><li><strong>Cash Prizes</strong> across multiple categories</li><li><strong>Global Participation</strong>: Join from anywhere</li></ul><h3>How to Participate?</h3><ol><li>Register Now (Free Entry)</li><li>Form a Team (1-4 members)</li><li>Submit Your Ideas</li><li>Join the Hackathon on September 6-7, 2025</li></ol><h3>Competition Rounds</h3><ul><li><strong>Round 1 (Idea Submission)</strong>: Teams submit ideas and receive feedback from mentors.</li><li><strong>Round 2 (Hackathon Weekend)</strong>: 36 hours of coding, workshops, mentorship, and project building at GNIT, Kolkata.</li><li><strong>Round 3 (Presentations)</strong>: Teams present projects to judges and participants.</li></ul><h3>Prize Pool</h3><p><strong>Total Prize Pool:</strong> $1100</p>",
@@ -39,7 +62,7 @@ function Hackathons() {
     },
     
    {
-      id: 2,
+      id: 3,
       status: 'open',
       title: "CyberShield Hackathon 2025 – Tackle Real-World Cybercrime!",
       description: "<p>CyberShield Hackathon 2025 is a real-world challenge where innovators come together to tackle cybercrime and build impactful solutions. This hackathon provides a collaborative environment for students to showcase their skills, gain hands-on experience, and contribute to digital security.</p><h3>About CyberShield Hackathon</h3><p>CyberShield brings together UG and PG engineering students to develop innovative solutions in fields such as cybercrime, digital investigation, and law enforcement support. This event offers mentorship, exposure, and the opportunity to present projects at CIIS 2025.</p><h3>Game Zones</h3><ul><li><strong>Cybercrime</strong> – Design tools and systems to prevent and detect cyber threats.</li><li><strong>Digital Investigation</strong> – Build solutions for forensics, evidence gathering, and analysis.</li><li><strong>Law Enforcement Solutions</strong> – Create technologies that empower agencies in combating cybercrime.</li></ul><h3>Event Details</h3><ul><li><strong>Registration Deadline</strong>: August 18, 2025</li><li><strong>Final Round Dates</strong>: September 9-11, 2025</li><li><strong>Final Round Venues</strong>: SGSITS Indore (Sept 9), MANIT Bhopal (Sept 10), JEC Jabalpur (Sept 11)</li><li><strong>Team Size</strong>: 3-5 members (at least one female participant required)</li><li><strong>Registration Fee</strong>: Free</li><li><strong>Eligibility</strong>: Open to all UG/PG Engineering Students</li></ul><h3>Why Join?</h3><ul><li><strong>Innovation & Impact</strong></li><li><strong>Cash Prizes</strong> for top teams</li><li><strong>Showcase Opportunity</strong> at CIIS 2025</li><li><strong>Pre-Placement Offers</strong> from ClearTrail Technologies</li></ul><h3>How to Participate?</h3><ol><li>Register before August 18, 2025</li><li>Form a Team (3-5 members with at least one female participant)</li><li>Submit your Application</li><li>Join the Final Round on September 9-11, 2025</li></ol><h3>Competition Rounds</h3><ul><li><strong>Team Formation</strong>: Teams formed based on skills or self-formed (no changes once finalized).</li><li><strong>Final Round (Offline Presentations)</strong>: Teams present solutions at SGSITS Indore, MANIT Bhopal, or JEC Jabalpur.</li></ul><h3>Prize Pool</h3><p><strong>Rewards:</strong> Substantial Cash Prizes, Showcase at CIIS 2025, and Pre-Placement Offers from ClearTrail Technologies.</p>",

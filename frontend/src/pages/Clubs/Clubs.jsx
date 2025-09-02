@@ -137,7 +137,8 @@ activities: [
     domain: 'Java Club',
     shortDescription: 'Java Club is a community for learning, sharing, and building projects with the power of Java programming.',
     leadership: {
-      leader: 'Nikita Singh'
+      leader: 'Nikita Singh',
+      manager: '------Yet to be Choosen-------'
     },
     rules: [
       'Regular attendance in Java coding sessions and workshops',
@@ -400,6 +401,7 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 
 

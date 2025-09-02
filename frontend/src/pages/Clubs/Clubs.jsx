@@ -231,6 +231,10 @@ function Clubs() {
         formUrl = '/TradingClub.pdf';
         fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
       }
+        else if (selectedClub.name === 'Java Club') {
+        formUrl = '/JavaClub.pdf';
+        fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
+      }
        else {
         alert('Form not available yet for this club. Please check back later.');
         return;
@@ -396,6 +400,7 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 
 

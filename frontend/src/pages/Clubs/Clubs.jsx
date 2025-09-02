@@ -131,6 +131,33 @@ activities: [
 ],
  icon: '📈'
   },
+   {
+    id: 5,
+    name: 'Java Club',
+    domain: 'Java Club',
+    shortDescription: 'Java Club is a community for learning, sharing, and building projects with the power of Java programming.',
+    leadership: {
+      leader: 'Nikita Singh'
+    },
+    rules: [
+      'Regular attendance in Java coding sessions and workshops',
+  'Active participation in team-based Java projects',
+  'Adherence to clean coding and best practices in Java',
+  'Proper documentation of code and project workflows',
+  'Sharing of knowledge, solutions, and learnings with the club'
+
+    ],
+    fullDescription: 'Welcome to the Java Club – a community of learners and innovators passionate about mastering Java programming. Our club focuses on building a strong foundation in core Java concepts, exploring advanced topics, and applying skills through projects, hackathons, and collaborative learning. Whether you are a beginner or an experienced coder, Java Club is the place to code, connect, and create together',
+    activities: [
+  'Java coding workshops',
+  'Collaborative project development',
+  'Problem-solving and algorithm challenges',
+  'Java framework and library exploration',
+  'Guest lectures and industry expert sessions'
+
+    ],
+    icon: '☕'
+  }
   
 //   {
 //     id: 2,
@@ -369,6 +396,7 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 
 

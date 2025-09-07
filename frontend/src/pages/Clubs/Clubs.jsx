@@ -265,6 +265,10 @@ function Clubs() {
         formUrl = '/JavaClub.pdf';
         fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
       }
+          else if (selectedClub.name === 'Python Club') {
+        formUrl = '/PythonClub.pdf';
+        fileName = `${selectedClub.name.toLowerCase().replace(/ /g, '_')}_membership_form.pdf`;
+      }
        else {
         alert('Form not available yet for this club. Please check back later.');
         return;
@@ -430,6 +434,7 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 
 

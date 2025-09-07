@@ -159,6 +159,35 @@ activities: [
     ],
     icon: '☕'
   }
+  ,
+   {
+    id: 6,
+    name: 'Python Club',
+    domain: 'Python Club',
+    shortDescription: 'Python Club – Learn, Code, and Innovate with Python.',
+    leadership: {
+      leader: 'Harsh Raikwar (6260329127)',
+      manager: 'Shivansh Gupta (7024801472)'
+    },
+    rules: [
+      'Respect all members and support collaborative learning',
+  'Be consistent and participate actively in club activities.',
+  'Share knowledge, resources, and coding practices openly.',
+  'Keep projects and discussions focused on Python and related technologies',
+  'Maintain discipline, integrity, and enthusiasm in every session.'
+
+    ],
+    fullDescription: 'The Python Club is a community of learners and enthusiasts exploring Python programming through projects, workshops, and peer learning to build coding skills and solve real-world problems.',
+    activities: [
+  'The club conducts coding workshops to strengthen Python skills.',
+  'Members work on mini projects to apply what they learn.',
+  'Hackathons and coding challenges are organized to boost problem-solving.',
+  'Guest talks and demos help students explore real-world Python applications.'
+   'Peer learning and code reviews encourage collaboration and improvement.'
+    ],
+  
+    icon: '🐍'
+  }
   
 //   {
 //     id: 2,
@@ -401,6 +430,7 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 
 

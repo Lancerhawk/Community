@@ -182,7 +182,7 @@ activities: [
   'The club conducts coding workshops to strengthen Python skills.',
   'Members work on mini projects to apply what they learn.',
   'Hackathons and coding challenges are organized to boost problem-solving.',
-  'Guest talks and demos help students explore real-world Python applications.'
+  'Guest talks and demos help students explore real-world Python applications.',
    'Peer learning and code reviews encourage collaboration and improvement.'
     ],
   
@@ -434,6 +434,7 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 
 

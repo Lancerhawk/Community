@@ -12,6 +12,7 @@ import khwaja from '../../assets/photo7.png';
 import deepanshi from '../../assets/photo8.jpg';
 import shanti from '../../assets/photo9.png';
 import suneha from '../../assets/photo10.png';
+import viksit from '../../assets/photo11.jpg';
 
 function Home() {
   const [stats, setStats] = useState({
@@ -339,7 +340,7 @@ function Home() {
               role: "Web Master",
               skills: ["Web Development", "DB Designer", "UI/UX Design"],
               linkedin: "https://linkedin.com",
-              avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emily"
+              avatar: viksit,
             },
             {
               id: 7,

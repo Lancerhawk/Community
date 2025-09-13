@@ -13,6 +13,7 @@ import deepanshi from '../../assets/photo8.jpg';
 import shanti from '../../assets/photo9.png';
 import suneha from '../../assets/photo10.png';
 import viksit from '../../assets/photo11.jpg';
+import mradul from '../../assets/photo12.jpg';
 
 function Home() {
   const [stats, setStats] = useState({
@@ -470,7 +471,7 @@ function Home() {
               role: "Event Coordinator",
               skills: ["TroubleShooting", "Event Organizer", "Event Handling"],
               linkedin: "https://linkedin.com",
-              avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Nina"
+              avatar: mradul,
             }
           ].map((member, index) => (
             <div key={member.id} className="member-card" style={{ animationDelay: `${index * 0.2}s` }}>

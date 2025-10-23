@@ -41,7 +41,7 @@ function Hackathons() {
     
    {
       id: 2,
-      status: 'open',
+      status: 'closed',
       title: "Smart India Hackathon 2025",
       description: "<p>Smart India Hackathon (SIH) is a premier nationwide initiative designed to engage students in solving some of the most pressing challenges faced in everyday life. It provides a dynamic platform for students to develop and showcase their creative solutions to real-world problems, fostering innovation and bridging the gap between academic knowledge and practical application.</p><h3>About SIH</h3><p>Since its inception, SIH has promoted out-of-the-box thinking among young minds and encourages collaboration with industry experts, government agencies, and other stakeholders.</p><h3>Game Zones</h3><ul><li><strong>Innovative Solutions</strong> – Cost-effective and creative solutions for real-world problems.</li><li><strong>Recognition & Visibility</strong> – National recognition across premier institutions.</li><li><strong>Out-of-the-box Solutions</strong> – Unique approaches from talented students.</li><li><strong>Innovation Movement</strong> – Be part of the world’s biggest open innovation platform.</li></ul><h3>Event Details</h3><ul><li><strong>Idea Submission Deadline</strong>: TBA</li><li><strong>Finals Date</strong>: TBA</li><li><strong>Team Size</strong>: TBA</li><li><strong>Registration Fee</strong>: Free</li><li><strong>Eligibility</strong>: Open to students from across India</li></ul><h3>Why Join?</h3><ul><li><strong>Innovative Solutions</strong> – Get innovative solutions to your problems in cost effective ways.</li><li><strong>Recognition and visibility</strong> – National recognition and visibility across premier institutions in India.</li><li><strong>Out-of-the-box solutions</strong> – Talented youngsters offer out-of-the-box solutions to your problems.</li><li><strong>Innovation Movement Opportunity</strong> – Be part of the world’s biggest open innovation movement.</li></ul><h3>How to Participate?</h3><ol><li>SPOC registration is now open for Colleges.</li><li>Know Your SPOC.</li><li>Submit Your Ideas.</li><li>Join the Hackathon Finals.</li></ol><h3>Competition Rounds</h3><ul><li><strong>Round 1 (Idea Submission)</strong>: Teams submit ideas via SPOC for evaluation.</li><li><strong>Round 2 (Hackathon)</strong>: Coding, mentorship, and project building.</li><li><strong>Round 3 (Presentations)</strong>: Teams present projects to judges and stakeholders.</li></ul><h3>Prize Pool</h3><p><strong>Total Prize Pool:</strong> ₹2,25,000 (1st Prize: ₹1,00,000 | 2nd Prize: ₹75,000 | 3rd Prize: ₹50,000)</p>",
      
@@ -51,7 +51,7 @@ function Hackathons() {
       prize: "Rs. 2.25lakh ",
       level: "Intermediate",
       category: "open",
-      registrationStatus: "open",
+      registrationStatus: "closed",
       registrationDeadline: "30-09-2025",
       teamSize: "1-6 members",
       registrationLink: "https://forms.gle/vb5fuBiA5deTAwsX7",

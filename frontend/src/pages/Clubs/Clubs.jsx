@@ -79,32 +79,32 @@ const clubsData = [
     ],
     icon: '📝'
   },
-  {
-    id: 3,
-    name: 'Data Science Club',
-    domain: 'Data Science',
-    shortDescription: 'Exploring data analytics and machine learning solutions',
-    leadership: {
-      leader: '------Yet to be Choosen-------',
-      manager: '------Yet to be Choosen-------'
-    },
-    rules: [
-      'Regular attendance in data analysis workshops',
-      'Participation in team-based data projects',
-      'Adherence to data ethics guidelines',
-      'Proper documentation of analysis methods',
-      'Sharing of insights and findings with the club'
-    ],
-    fullDescription: 'The Data Science Club is a vibrant community focused on exploring and implementing data analytics, machine learning, and statistical analysis. We work with real-world datasets, develop predictive models, and learn industry-standard tools and techniques. Our goal is to help members build strong foundations in data science while working on practical projects.',
-    activities: [
-      'Data analysis workshops',
-      'Machine learning projects',
-      'Statistical modeling sessions',
-      'Data visualization challenges',
-      'Industry expert seminars'
-    ],
-    icon: '📊'
-  },
+  // {
+  //   id: 3,
+  //   name: 'Data Science Club',
+  //   domain: 'Data Science',
+  //   shortDescription: 'Exploring data analytics and machine learning solutions',
+  //   leadership: {
+  //     leader: '------Yet to be Choosen-------',
+  //     manager: '------Yet to be Choosen-------'
+  //   },
+  //   rules: [
+  //     'Regular attendance in data analysis workshops',
+  //     'Participation in team-based data projects',
+  //     'Adherence to data ethics guidelines',
+  //     'Proper documentation of analysis methods',
+  //     'Sharing of insights and findings with the club'
+  //   ],
+  //   fullDescription: 'The Data Science Club is a vibrant community focused on exploring and implementing data analytics, machine learning, and statistical analysis. We work with real-world datasets, develop predictive models, and learn industry-standard tools and techniques. Our goal is to help members build strong foundations in data science while working on practical projects.',
+  //   activities: [
+  //     'Data analysis workshops',
+  //     'Machine learning projects',
+  //     'Statistical modeling sessions',
+  //     'Data visualization challenges',
+  //     'Industry expert seminars'
+  //   ],
+  //   icon: '📊'
+  // },
   {
     id: 4,
     name: 'Trading Club',
@@ -434,6 +434,7 @@ function Clubs() {
 }
 
 export default Clubs;
+
 
 
 

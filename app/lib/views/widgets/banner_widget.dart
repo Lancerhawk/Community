@@ -1,0 +1,108 @@
+import 'dart:async';
+import 'package:codingera2/controllers/banner_controller.dart';
+import 'package:codingera2/models/banner.dart';
+import 'package:flutter/material.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+class BannerWidget extends StatefulWidget {
+  const BannerWidget({super.key});
+
+  @override
+  State<BannerWidget> createState() => _BannerWidgetState();
+}
+
+class _BannerWidgetState extends State<BannerWidget> {
+  final PageController _pageController = PageController();
+  Timer? _autoScrollTimer;
+  int _currentPage = 0;
+  List<BannerModel> banners = [];
+
+  @override
+  void initState() {
+    super.initState();
+    loadBanners();
+  }
+
+  void loadBanners() async {
+    try {
+      final loadedBanners = await BannerController().loadBanner();
+      if (mounted) {
+        setState(() {
+          banners = loadedBanners;
+        });
+
+        if (banners.length > 1) {
+          _autoScrollTimer = Timer.periodic(Duration(seconds: 3), (timer) {
+            if (_pageController.hasClients) {
+              _currentPage = (_currentPage + 1) % banners.length;
+              _pageController.animateToPage(
+                _currentPage,
+                duration: Duration(milliseconds: 500),
+                curve: Curves.easeInOut,
+              );
+            }
+          });
+        }
+      }
+    } catch (e) {
+      // Handle load error if needed
+    }
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    _autoScrollTimer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 250,
+      width: MediaQuery.of(context).size.width,
+      child:
+          banners.isEmpty
+              ? Center(child: CircularProgressIndicator())
+              : Column(
+                children: [
+                  Expanded(
+                    child: PageView.builder(
+                      controller: _pageController,
+                      itemCount: banners.length,
+                      onPageChanged: (index) => _currentPage = index,
+                      itemBuilder: (context, index) {
+                        final banner = banners[index];
+                        return Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white),
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: Image.network(
+                                banner.image,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  SmoothPageIndicator(
+                    controller: _pageController,
+                    count: banners.length,
+                    effect: JumpingDotEffect(
+                      offset: 25,
+                      verticalOffset: 5,
+                      jumpScale: 1.4,
+                    ),
+                  ),
+                ],
+              ),
+    );
+  }
+}
